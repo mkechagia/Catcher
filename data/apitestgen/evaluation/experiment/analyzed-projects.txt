@@ -1,0 +1,1 @@
+In this folder, we add the analyzed projects and the produced files.
