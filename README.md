@@ -46,3 +46,7 @@ See the attached guidelines document for the setting of the parameters and how t
 1. In `config.sh`, comment/uncomment the lines of the projects for which you want to synthesize stack traces. Add a line for each new project (the name should be the name used in `experiment/`).
 
 2. Execute `. runsynthesizer.sh`.
+
+# Run on VM
+
+https://drive.google.com/open?id=1sqms5pGyAlYFaSzuWRSE0bxscsQEW6xP
