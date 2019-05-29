@@ -1,0 +1,1 @@
+In this folder, we add the projects we want to analyze along with their dependencies.
