@@ -1,0 +1,158 @@
+{
+    "org.xwiki.text.StringUtils.doubleChar(java.lang.String,char)-java.lang.String.substring(int)": {
+        "call-site-sig": "org.xwiki.text.StringUtils.doubleChar(java.lang.String,char)", 
+        "exception-list": {
+            "level_0": [
+                [
+                    "1927", 
+                    "java.lang.StringIndexOutOfBoundsException"
+                ], 
+                [
+                    "1931", 
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ], 
+            "level_1": [], 
+            "level_2": [], 
+            "id": "java.lang.String.substring(int)"
+        }, 
+        "api-method-sig": "java.lang.String.substring(int)", 
+        "call-site-line": "64", 
+        "java-file-path": "StringUtils.java"
+    }, 
+    "org.xwiki.text.StringUtils.doubleChar(java.lang.String,char)-java.lang.StringBuilder.append(String)": {
+        "call-site-sig": "org.xwiki.text.StringUtils.doubleChar(java.lang.String,char)", 
+        "exception-list": {
+            "level_0": [], 
+            "level_1": [], 
+            "level_2": [
+                [
+                    [
+                        "136", 
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ], 
+                    [
+                        "449", 
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ], 
+                    [
+                        "818", 
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ], 
+                [
+                    [
+                        "136", 
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ], 
+                    [
+                        "449", 
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ], 
+                    [
+                        "821", 
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ], 
+                [
+                    [
+                        "136", 
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ], 
+                    [
+                        "449", 
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ], 
+                    [
+                        "824", 
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ], 
+            "id": "java.lang.StringBuilder.append(String)"
+        }, 
+        "api-method-sig": "java.lang.StringBuilder.append(String)", 
+        "call-site-line": "58", 
+        "java-file-path": "StringUtils.java"
+    }, 
+    "org.xwiki.text.StringUtils.doubleChar(java.lang.String,char)-java.lang.String.substring(int, int)": {
+        "call-site-sig": "org.xwiki.text.StringUtils.doubleChar(java.lang.String,char)", 
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960", 
+                    "java.lang.StringIndexOutOfBoundsException"
+                ], 
+                [
+                    "1963", 
+                    "java.lang.StringIndexOutOfBoundsException"
+                ], 
+                [
+                    "1967", 
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ], 
+            "level_1": [], 
+            "level_2": [], 
+            "id": "java.lang.String.substring(int, int)"
+        }, 
+        "api-method-sig": "java.lang.String.substring(int, int)", 
+        "call-site-line": "58", 
+        "java-file-path": "StringUtils.java"
+    }, 
+    "org.xwiki.text.XWikiToStringStyle.setSeparator(java.lang.String)-java.lang.String.format(String, Object[])": {
+        "call-site-sig": "org.xwiki.text.XWikiToStringStyle.setSeparator(java.lang.String)", 
+        "exception-list": {
+            "level_0": [], 
+            "level_1": [], 
+            "level_2": [
+                [
+                    [
+                        "2940", 
+                        "java.util.Formatter.format(String, Object[])"
+                    ], 
+                    [
+                        "2455", 
+                        "java.util.Formatter.format(Locale, String, Object[])"
+                    ], 
+                    [
+                        "2512", 
+                        "java.util.MissingFormatArgumentException"
+                    ]
+                ], 
+                [
+                    [
+                        "2940", 
+                        "java.util.Formatter.format(String, Object[])"
+                    ], 
+                    [
+                        "2455", 
+                        "java.util.Formatter.format(Locale, String, Object[])"
+                    ], 
+                    [
+                        "2519", 
+                        "java.util.MissingFormatArgumentException"
+                    ]
+                ], 
+                [
+                    [
+                        "2940", 
+                        "java.util.Formatter.format(String, Object[])"
+                    ], 
+                    [
+                        "2455", 
+                        "java.util.Formatter.format(Locale, String, Object[])"
+                    ], 
+                    [
+                        "2525", 
+                        "java.util.MissingFormatArgumentException"
+                    ]
+                ]
+            ], 
+            "id": "java.lang.String.format(String, Object[])"
+        }, 
+        "api-method-sig": "java.lang.String.format(String, Object[])", 
+        "call-site-line": "62", 
+        "java-file-path": "XWikiToStringStyle.java"
+    }
+}
