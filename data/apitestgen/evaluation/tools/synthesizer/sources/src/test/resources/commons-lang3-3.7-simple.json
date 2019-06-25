@@ -1,0 +1,98 @@
+{
+    "org.jfree.chart.renderer.xy.StandardXYItemRenderer.readObject(java.io.ObjectInputStream)-java.io.ObjectInputStream.defaultReadObject()": {
+        "call-site-sig": "org.jfree.chart.renderer.xy.StandardXYItemRenderer.readObject(java.io.ObjectInputStream)", 
+        "exception-list": {
+            "level_0": [
+                [
+                    "553", 
+                    "java.io.NotActiveException"
+                ]
+            ], 
+            "level_1": [
+                [
+                    [
+                        "558", 
+                        "java.io.ObjectInputStream.defaultReadFields(Object, ObjectStreamClass)"
+                    ], 
+                    [
+                        "2264", 
+                        "java.lang.ClassCastException"
+                    ]
+                ]
+            ], 
+            "level_2": [], 
+            "id": "java.io.ObjectInputStream.defaultReadObject()"
+        }, 
+        "api-method-sig": "java.io.ObjectInputStream.defaultReadObject()", 
+        "call-site-line": "1056", 
+        "java-file-path": "StandardXYItemRenderer.java"
+    }, 
+"org.jfree.data.xy.DefaultWindDataset.seriesNameListFromDataArray(java.lang.Object[][])-java.lang.StringBuffer.append(String)": {
+        "call-site-sig": "org.jfree.data.xy.DefaultWindDataset.seriesNameListFromDataArray(java.lang.Object[][])", 
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960", 
+                    "java.lang.StringIndexOutOfBoundsException"
+                ], 
+                [
+                    "1963", 
+                    "java.lang.StringIndexOutOfBoundsException"
+                ], 
+                [
+                    "1967", 
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ], 
+            "level_1": [], 
+            "level_2": [
+                [
+                    [
+                        "270", 
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ], 
+                    [
+                        "449", 
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ], 
+                    [
+                        "818", 
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ], 
+                [
+                    [
+                        "270", 
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ], 
+                    [
+                        "449", 
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ], 
+                    [
+                        "821", 
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ], 
+                [
+                    [
+                        "270", 
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ], 
+                    [
+                        "449", 
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ], 
+                    [
+                        "824", 
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ], 
+            "id": "java.lang.StringBuffer.append(String)"
+        }, 
+        "api-method-sig": "java.lang.StringBuffer.append(String)", 
+        "call-site-line": "285", 
+        "java-file-path": "DefaultWindDataset.java"
+    }
+}
