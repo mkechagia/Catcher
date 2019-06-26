@@ -49,3 +49,7 @@ See the guidelines document for the setting of the parameters and how to launch 
 # Run on VM
 
 https://drive.google.com/open?id=1sqms5pGyAlYFaSzuWRSE0bxscsQEW6xP
+
+# Download data set
+
+https://drive.google.com/open?id=1luIkAC6q9HPhlbdvy_Y8JTKgPnp4cUVi
