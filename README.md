@@ -39,7 +39,7 @@ The stack traces synthesizer is launched using `synthesizer/synthesize.sh`. The 
 
 ## EvoSuite analysis (`tools/evosuite/launcher-1.0.sh`)
 
-See the guidelines document for the setting of the parameters and how to launch the tool.
+See the guidelines document (catcher-artifact.pdf) for the setting of the parameters and how to launch the tool.
 
 # Synthesizing stack traces for a new project
 
