@@ -46,6 +46,10 @@ See the guidelines document for the setting of the parameters and how to launch 
 
 2. Execute `. runsynthesizer.sh`.
 
+# Tutorial on VM
+
+See catcher-artifact.pdf
+
 # Run on VM
 
 https://drive.google.com/open?id=1sqms5pGyAlYFaSzuWRSE0bxscsQEW6xP
