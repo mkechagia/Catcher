@@ -58,3 +58,10 @@ https://drive.google.com/open?id=1sqms5pGyAlYFaSzuWRSE0bxscsQEW6xP
 # Download data set
 
 https://drive.google.com/open?id=1luIkAC6q9HPhlbdvy_Y8JTKgPnp4cUVi
+
+# Publication
+
+Kechagia M., Devroey X., Panichella A., Gousios G., van Deursen A (2019). Effective and Efficient API Misuse Detection via Exception Propagation and Search-based Testing. In 2019 ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2019). Beijing, China: ACM.
+
+Pre-print
+https://pure.tudelft.nl/portal/files/54238155/catcher.pdf
