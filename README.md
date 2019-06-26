@@ -1,5 +1,6 @@
 # Catcher
 
+Tool that combines static exception propagation and search-based software testing to automatically detect (and generate test cases) for API misuses in Java client programs.
 
 # Structure
 
