@@ -113,7 +113,7 @@ defects4j_dict = {
 					'javassist-3.23.1-GA':'javassist',
 					'jcommander-1.71':'jcommander',
 					'jopt-simple-5.0.4':'joptsimple',
-					'xwiki-commons-text-13.10':'xwiki',
+					'xwiki-commons-text-10.6':'xwiki',
 					'guava-19.0':'google.common',
                                         'jackson-databind-2.9.6':'jackson.databind',
 					'natty-0.13':'natty',

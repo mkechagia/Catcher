@@ -15,7 +15,7 @@ SUBJECTS=(
     #'commons-lang3-3.7'
     #'jcommander-1.71'
     #'natty-0.13'
-    # 'xwiki-commons-text-13.10'
+    # 'xwiki-commons-text-10.6'
     #'commons-codec-1.12-SNAPSHOT'
     #'commons-math3-3.6.1'
     #'hamcrest-core-1.3'

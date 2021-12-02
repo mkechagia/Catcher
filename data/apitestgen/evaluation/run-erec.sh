@@ -20,4 +20,4 @@ jsonfile=$scriptdir/experiment/$subject/erec.json
 
 # Run eRec
 #. $scriptdir/tools/erec/erec.sh $subject $jarfolder $expefolder
-. $scriptdir/tools/erec/erec.sh xwiki-commons-text-13.10 evaluation/subjects/xwiki-commons-text-13.10 evaluation/experiment/xwiki-commons-text-13.10
+. $scriptdir/tools/erec/erec.sh xwiki-commons-text-10.6 evaluation/subjects/xwiki-commons-text-10.6 evaluation/experiment/xwiki-commons-text-10.6

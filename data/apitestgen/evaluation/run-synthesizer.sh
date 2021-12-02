@@ -20,4 +20,4 @@ jsonfile=$scriptdir/experiment/$subject/erec.json
 
 # Run synthesizer
 #. $scriptdir/tools/synthesizer/synthesize.sh $subject $jsonfile $expefolder
-. $scriptdir/tools/synthesizer/synthesize.sh xwiki-commons-text-13.10 evaluation/experiment/xwiki-commons-text-13.10/erec.json evaluation/experiment/xwiki-commons-text-13.10
+. $scriptdir/tools/synthesizer/synthesize.sh xwiki-commons-text-10.6 evaluation/experiment/xwiki-commons-text-10.6/erec.json evaluation/experiment/xwiki-commons-text-10.6

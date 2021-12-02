@@ -20,4 +20,4 @@ jsonfile=$scriptdir/experiment/$subject/erec.json
 
 # Run extended EvoSuite
 
-java -jar tools/evosuite/launcher-1.0.jar . 1000 1 1 catchy_fast xwiki-commons-text-13.10
+java -jar tools/evosuite/launcher-1.0.jar . 1000 1 1 catchy_fast xwiki-commons-text-10.6
