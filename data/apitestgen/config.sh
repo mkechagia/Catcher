@@ -3,6 +3,7 @@
 # Contains the list of subjects to be used for the experiment.
 # Comment lines if you want to skip particular subjects.
 # Usage example: for s in ${SUBJECTS[*]}; do echo $s; done;
+# Use this if you want to use runall.sh script
 SUBJECTS=(
     #'bcel-6.2'
     #'commons-compress-1.17'
@@ -14,7 +15,7 @@ SUBJECTS=(
     #'commons-lang3-3.7'
     #'jcommander-1.71'
     #'natty-0.13'
-    'xwiki-commons-text-10.6'
+    # 'xwiki-commons-text-13.10'
     #'commons-codec-1.12-SNAPSHOT'
     #'commons-math3-3.6.1'
     #'hamcrest-core-1.3'

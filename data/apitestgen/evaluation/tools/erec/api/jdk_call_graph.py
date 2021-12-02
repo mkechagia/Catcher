@@ -41,8 +41,8 @@ global analysis_type
 analysis_type = ""
 
 def main():
-    	start = time.time()
 
+	start = time.time()
 	path = sys.argv[1] # folder where the .jimple files belong to
 	path_api_json = sys.argv[2] # where to store the output .json (jdk nodes)
 	# API version
@@ -53,7 +53,7 @@ def main():
 	add_dict_to_JSON(path2, path_api_json, DG)
 
 	end = time.time()
-        print "Annoteated JDK call graph building duration: "+str(end-start)
+	print("Annoteated JDK call graph building duration: "+str(end-start))
 
 def read_folder(path, analysis_type):
 	for subdir, dirs, files in os.walk(path):
@@ -100,7 +100,7 @@ def parse_jimple(file, analysis_type):
 				if (t_method not in G.nodes()):
 					DG.add_node(t_method)
 					if (t_method==""):
-						print "Found here!"
+						print("Found here!")
 					# level_0 -> throw new in method body, from intra procedural analysis
 					DG.nodes[t_method]['level_0'] = []
 					DG.nodes[t_method]['level_1'] = []
@@ -163,7 +163,7 @@ def parse_jimple(file, analysis_type):
 					# new directed edge from the current method to the called method
 					DG.add_edge(t_method, called_method)
 					if (t_method==""):
-						print "Called Found here " + str(f)
+						print("Called Found here " + str(f))
 					# each edge has as attribute the code line number(s) of the call sites
 					# note that a method can intraprocedually call another more than one time
 					DG[t_method][called_method]['call-site-line'] = []
@@ -232,7 +232,7 @@ def traverse_the_graph():
 						if ((not re.search("(ClassNotFoundException|Throwable|Error)", str(l_l_exc_l0[x]))) and (re.search("Exception", str(l_l_exc_l0[x])))):
 							DG.nodes[nd]['level_1'].append([(call_site_l, succ_of_nd[k]), l_l_exc_l0[x]])
 							if (nd==""):
-								print "Found"
+								print("Found")
 			# level_2
 			DG.nodes[nd]['level_2'] = []
 			succ_bfs_dict = dict(nx.bfs_successors(DG, succ_of_nd[k]))

@@ -19,7 +19,6 @@ import time
 
 from collections import defaultdict
 from collections import OrderedDict
-from sets import Set
 
 # API methods and exceptions from .jar file (caller method)
 global app_dict
@@ -87,8 +86,8 @@ def main():
 	with open(file_name, 'w') as fp:
 		json.dump(lib_dict, fp, indent = 4)
 
-        end = time.time()
-        print "Exception propagation duration: "+str(end-start)
+		end = time.time()
+		print("Exception propagation duration: "+str(end-start))
 
 def parse_api_nodes(nodes_path):
 	graph_dict = decode_json(nodes_path)
@@ -101,17 +100,17 @@ def parse_api_nodes(nodes_path):
 		if (node_name not in lib_keys):
 			lib_dict.setdefault(node_name, node_dict)
 		else:
-			print str(node_name) + " is already in the library dictionary."
+			print(str(node_name) + " is already in the library dictionary.")
 	return lib_dict
 
 def read_folder(path_app, api_name, api_version, api_dict):
 	app_name = ""
 	# list app folders (first level subfolders)
-	dir_list = os.walk(path_app).next()[1]
+	dir_list = next(os.walk(path_app))[1]
 	for k, l in enumerate(dir_list):
 		app_name = dir_list[k]
 		if ((re.search("^derbyTesting$", app_name)) or (re.search("^asm-3.1$", app_name)) or (re.search("^antlr-3.1.3$", app_name))):
-			print "Possible issues with these .jar files ..." # from Dacapo benchmark
+			print("Possible issues with these .jar files ...") # from Dacapo benchmark
 			continue
 		else:
 			path = path_app + "/" + dir_list[k]
@@ -125,7 +124,7 @@ def decode_json(f_json):
 		with open(f_json) as f:
 			return json.load(f)
 	except ValueError:
-		print 'Decoding JSON has been failed: ', f_json
+		print('Decoding JSON has been failed: ', f_json)
 
 def read_files(files, app_path, ap_version, app_name, api_dict):
 	for f in files:
@@ -256,7 +255,7 @@ def parse_jimple(file, app_name, api_version, api_dict):
 						j_class_list = re.split("\.",j_file)
 						j_class = j_class_list[len(j_class_list)-2] + ".java"
 						line = str(l_l_no[1])
-						exceptions_list = Set(excp_api)
+						exceptions_list = set(excp_api)
 						uniq_exc_list = list(exceptions_list)
 						attr = {}
 						attr.setdefault("call-site-line", line)
@@ -419,7 +418,7 @@ def locate_labels_in_catch(line, m_dict, attributes):
 	# list for the labels in catch (e.g. catch java.lang.Throwable from label1 to label2 with label3;)
 	labels_lst = []
 	# keys (labels) from dictionary
-	m_dict_keys = m_dict.keys()
+	m_dict_keys = list(m_dict.keys())
 	# states for labels
 	state = 0
 	# last label to search for new exceptions
@@ -507,7 +506,7 @@ def add_dict_to_JSON(app_dict_might_thrown_exc, app_name):
 		json.dump(app_dict_might_thrown_exc, fp, indent = 4)
 
 def exclude_caught_prop_excps_in_jdk(exc_dict):
-	app_keys = app_dict.keys()
+	app_keys = list(app_dict.keys())
 
 	#tmthd = "java.time.Duration.parseNumber(CharSequence, String, int, String)"
 	#m_dict = app_dict[tmthd]
@@ -521,9 +520,9 @@ def exclude_caught_prop_excps_in_jdk(exc_dict):
 
 # compare API methods and exceptions between app_dict and lib_dict_dict
 def apply_set_operations(tmthd, m_dict, lib_dict, app_name, api_ver, exc_dict):
-	if (lib_dict.keys()):
-		m_dict_keys = m_dict.keys()
-		lib_dict_keys = lib_dict.keys()
+	if (list(lib_dict.keys())):
+		m_dict_keys = list(m_dict.keys())
+		lib_dict_keys = list(lib_dict.keys())
 		for k, l in enumerate(m_dict_keys):
 			if (re.search("(catch).*", m_dict_keys[k])):
 				attributes = m_dict.get(m_dict_keys[k])
@@ -544,15 +543,15 @@ def apply_set_operations(tmthd, m_dict, lib_dict, app_name, api_ver, exc_dict):
 								exc = exc_line[1]
 								exc_keys = exc_dict.keys()
 								if (exc in exc_keys):
-									exc_parents = Set(exc_dict[exc])
-									comm_exc = exc_parents.intersection(Set(excp))
+									exc_parents = set(exc_dict[exc])
+									comm_exc = exc_parents.intersection(set(excp))
 									#if (api in api_mthd) and (exc in excp):
 									if (((api in api_mthd) and (len(comm_exc) > 0)) or ((api in api_mthd) and (exc == "java.lang.Exception"))):
-										print "Old node: " + str(node_dict)
+										print("Old node: " + str(node_dict))
 										node_dict["level_1"].remove(list_orig[j])
-										print tmthd + str(m_dict) + "\n"
-										print "Removed: " + str(list_orig[j]) + "\n"
-										print "New node: " + str(node_dict) + "\n"
+										print(tmthd + str(m_dict) + "\n")
+										print("Removed: " + str(list_orig[j]) + "\n")
+										print("New node: " + str(node_dict) + "\n")
 						# propagated exceptions via the called method
 						if (len(node_dict["level_2"]) > 0):
 							list_orig = copy.deepcopy(node_dict["level_2"])
@@ -567,39 +566,39 @@ def apply_set_operations(tmthd, m_dict, lib_dict, app_name, api_ver, exc_dict):
 								exc = exc_line[1]
 								exc_keys = exc_dict.keys()
 								if (exc in exc_keys):
-									exc_parents = Set(exc_dict[exc])
-									comm_exc = exc_parents.intersection(Set(excp))
+									exc_parents = set(exc_dict[exc])
+									comm_exc = exc_parents.intersection(set(excp))
 									#if (caller in api_mthd) and (exc in excp):
 									if (((caller in api_mthd) and (len(comm_exc) > 0)) or ((caller in api_mthd) and (exc == "java.lang.Exception"))):
-										print "Old node: " + str(node_dict) + "\n"
+										print("Old node: " + str(node_dict) + "\n")
 										node_dict["level_2"].remove(list_orig[l])
-										print tmthd + str(m_dict) + "\n"
-										print "Removed: " + str(list_orig[l])
-										print "New node: " + str(node_dict) + "\n"
+										print(tmthd + str(m_dict) + "\n")
+										print("Removed: " + str(list_orig[l]))
+										print("New node: " + str(node_dict) + "\n")
 									# app here we mean all the methods of the analyzed JDK!
-									app_keys = app_dict.keys()
+									app_keys = list(app_dict.keys())
 									# check if the caller (methodB) has the callee (methodC) in try-catch
 									if (caller in app_keys):
 										caller_dict = app_dict[caller]
-										caller_keys = caller_dict.keys()
+										caller_keys = list(caller_dict.keys())
 										for r, s in enumerate(caller_keys):
 											if (re.search("(catch).*", caller_keys[r])):
 												attributes = caller_dict.get(caller_keys[r])
 												# get values from dictionary for catch label attributes
 												api_mthds = attributes.get('api_methods')
 												excps = attributes.get('exceptions')
-												comm_excs = exc_parents.intersection(Set(excps))
+												comm_excs = exc_parents.intersection(set(excps))
 												#if (callee in api_mthds) and (exc in excps):
 												if (((callee in api_mthds) and (len(comm_excs) > 0)) or ((callee in api_mthds) and (exc == "java.lang.Exception"))):
-													print "Old node 2: " + str(node_dict) + "\n"
+													print("Old node 2: " + str(node_dict) + "\n")
 													if (list_orig[l] in node_dict["level_2"]):
-														print "Old node 2: " + str(node_dict) + "\n"
+														print("Old node 2: " + str(node_dict) + "\n")
 														node_dict["level_2"].remove(list_orig[l])
-														print caller + str(caller_dict) + "\n"
-														print "Removed 2: " + str(list_orig[l])
-														print "New node 2: " + str(node_dict) + "\n"
+														print(caller + str(caller_dict) + "\n")
+														print("Removed 2: " + str(list_orig[l]))
+														print("New node 2: " + str(node_dict) + "\n")
 	else:
-		print "API version not available!" + api_ver
+		print("API version not available!", api_ver)
 
 # run main
 if __name__ == "__main__":

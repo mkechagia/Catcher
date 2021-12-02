@@ -1,9 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 __author___= "Maria Kechagia"
 __copyright__= "Copyright 2018"
 __license__= "Apache License, Version 2.0"
 __email__= "m.kechagiaATtudelft.nl"
+__updated__="ataupill@ualberta.ca"
 
 import re
 import os
@@ -39,7 +40,7 @@ def main():
 
 	# open and parse .jimple files
 	read_folder()
-	#print DG.nodes.data()
+	#print(DG.nodes.data()
 	#add_dict_to_JSON(DG)
 	succ_dict = {}
 	for nd in DG:
@@ -53,18 +54,18 @@ def main():
 		#print "Predecessor of: "+ nd + " " + str(bfs_dict) + "\n"
 	with open(path_JSON+"/exceptions-succ.json", 'w') as fp:
 		json.dump(succ_dict, fp, indent = 4)
-        
-        end = time.time()
-        print "Exception hierarchy building duration: "+str(end-start)
+		end = time.time()
+
+		print("Exception hierarchy building duration: "+str(end-start))
 
 def read_folder():
 	app_name = ""
 	# list app folders (first level subfolders)
-	dir_list = os.walk(path_app).next()[1]
+	dir_list = next(os.walk(path_app))[1]
 	for k, l in enumerate(dir_list):
 		app_name = dir_list[k]
 		if ((re.search("^derbyTesting$", app_name)) or (re.search("^asm-3.1$", app_name)) or (re.search("^antlr-3.1.3$", app_name))):
-			print "Possible issues with these .jar files ..." # from Dacapo benchmark
+			print("Possible issues with these .jar files ...") # from Dacapo benchmark
 			continue
 		else:
 			path = path_app + "/" + dir_list[k]
