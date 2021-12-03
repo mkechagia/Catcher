@@ -24,7 +24,8 @@ do
         echo "$FILE is a subdirectory..."
 
 	fname=`echo "$FILE"`
-	if [ $fname == "xwiki-commons-text-13.10" ];
+	# TODO change this to read the entire config file
+	if [ $fname == "xwiki-commons-text-10.6" ];
 	then
 		echo "$FILE is a subdirectory..."
 

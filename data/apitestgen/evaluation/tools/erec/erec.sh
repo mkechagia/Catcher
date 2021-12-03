@@ -12,7 +12,7 @@ subject=$1
 jars=$2
 experiment=$3
 
-. $scriptdir/run-apps-analysis-one-project.sh # use run-apps-analysis-all.sh for all projects
+. $scriptdir/run-apps-analysis-one-project.sh $subject # use run-apps-analysis-all.sh for all projects
 
 echo "Script in directory $scriptdir"
 echo "Subject name $subject"

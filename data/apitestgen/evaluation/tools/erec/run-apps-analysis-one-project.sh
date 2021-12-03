@@ -5,6 +5,7 @@
 
 # Directory of the apitestgen folder
 cwd=`pwd`
+subject=$1
 
 # make scripts executable (on macos and linux)
 chmod +x $cwd/evaluation/tools/erec/apps/run-soot-jar.sh
@@ -24,7 +25,7 @@ do
         echo "$FILE is a subdirectory..."
 	fname=`echo "$FILE"`;
 
-	if [ $fname == "xwiki-commons-text-10.6" ];
+	if [ $fname == $subject ];
 	then
 		echo "$FILE is a subdirectory..."
 
