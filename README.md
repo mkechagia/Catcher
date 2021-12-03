@@ -1,5 +1,11 @@
 # Catcher
 
+## Usage
+1. Use Java8
+2. Install requirements.txt
+3. Need mvn
+
+
 Tool that combines static exception propagation and search-based software testing to automatically detect (and generate test cases) for API misuses in Java client programs.
 
 # Structure

@@ -14,7 +14,6 @@ import time
 
 from collections import defaultdict
 from collections import OrderedDict
-from sets import Set
 
 # API methods and exceptions from .jar file (caller method)
 global app_dict
@@ -141,16 +140,16 @@ def main():
 	#print app_throws
 
 	end = time.time()
-        print "Exception propagation within app duration: "+str(end-start)
+	print("Exception propagation within app duration: "+str(end-start))
 
 # for immutability
 def copy_dictionary(lib_dict):
 	# new code here DICTIONARY
 	dict_exc = {}
-	lib_keys = lib_dict.keys()
+	lib_keys = list(lib_dict.keys())
 
 	#print lib_dict
-	print "\n"
+	print("\n")
 
 	for y, t in enumerate(lib_keys):
 
@@ -176,21 +175,21 @@ def copy_dictionary(lib_dict):
 		data.setdefault('id', id)
 
 	#print dict_exc
-	print "\n"
+	print("\n")
 	return dict_exc
 
 def read_folder(path_app, api_name, api_version, lib_dict, exc_dict, dict_exc, defects4j_dict):
-	defects4j_dict_keys = defects4j_dict.keys()
+	defects4j_dict_keys = list(defects4j_dict.keys())
 	app_name = ""
 	# list app folders (first level subfolders)
-	dir_list = os.walk(path_app).next()[1]
+	dir_list = next(os.walk(path_app))[1]
 	for k, l in enumerate(dir_list):
 		app_name = dir_list[k]
 		if ((re.search("^derbyTesting$", app_name)) or (re.search("^asm-3.1$", app_name)) or (re.search("^antlr-3.1.3$", app_name))):
-			print "Possible issues with these .jar files ..." # from Dacapo benchmark
+			print("Possible issues with these .jar files ...") # from Dacapo benchmark
 			continue
 		else:
-			print "App name: " + app_name
+			print("App name: " + app_name)
 			path = path_app + "/" + dir_list[k]
 			# search in the files of the app folder
 			files = os.listdir(path)
@@ -205,10 +204,10 @@ def read_folder(path_app, api_name, api_version, lib_dict, exc_dict, dict_exc, d
 				for b, d in enumerate(defects4j_dict_keys):
 					if (defects4j_dict_keys[b] == app_name):
 						app = defects4j_dict[app_name]
-						print app
+						print(app)
 						read_files(files, path, api_version, app, lib_dict, lib_dict, exc_dict, dict_exc)
 						check_throws(app_dict_might_thrown_exc, app_throws, exc_dict)
-						app_dict_might_thrown_exc_keys = app_dict_might_thrown_exc.keys()
+						app_dict_might_thrown_exc_keys = list(app_dict_might_thrown_exc.keys())
 						for z, w in enumerate(app_dict_might_thrown_exc_keys):
 							call_dict = app_dict_might_thrown_exc[app_dict_might_thrown_exc_keys[z]]
 							n_dict = call_dict.get('exception-list')
@@ -218,12 +217,12 @@ def read_folder(path_app, api_name, api_version, lib_dict, exc_dict, dict_exc, d
 
 # decode json files into dictionary
 def decode_json(f_json):
-	print "json file ", f_json
+	print("json file ", f_json)
 	try:
 		with open(f_json) as f:
 			return json.load(f)
 	except ValueError:
-		print 'Decoding JSON has been failed: ', f_json
+		print('Decoding JSON has been failed: ', f_json)
 
 def read_files(files, app_path, ap_version, app_name, api_dict, lib_dict, exc_dict, dict_exc):
 	a_type = re.split("-", app_name)
@@ -272,7 +271,7 @@ def parse_jimple(file, app_name, api_version, api_dict, lib_dict, exc_dict, dict
 	f = open(file)
 	lines = f.readlines()
 	for l, k in enumerate(lines):
-		print "Current line:" + lines[l]
+		print("Current line:" + lines[l])
 		# in case of new method signature
 		#if ((l + 1 < len(lines)) and re.search(p15, lines[l]) and re.search(p2, lines[l + 1])):
 		#	print "Here the method!!!!!!!!" + lines[l]
@@ -281,8 +280,8 @@ def parse_jimple(file, app_name, api_version, api_dict, lib_dict, exc_dict, dict
 			is_serial = 0
 			# check for method with declared exception in signature and update dictionary
 			if (re.search(p16, lines[l])):
-				print "\n"
-				print "Here:", lines[l]
+				print("\n")
+				print("Here:", lines[l])
 				th_lst = re.split("\s(throws)\s", lines[l])
 				th_app = th_lst[2]
 				th = re.sub(" ", "", th_app)
@@ -296,15 +295,15 @@ def parse_jimple(file, app_name, api_version, api_dict, lib_dict, exc_dict, dict
 				#	th.append(th1)
 					
 				#print th
-				print th
-				print th_lst
+				print(th)
+				print(th_lst)
 				method_sig = re.search(p1, th_lst[0]).group()
 				method_s = re.search(p8, method_sig).group()
 				method_nm = re.split("\(", method_s)
 				upd_method = update_md_args(method_s)
 				t_method = cl_m + "." + method_s
 				t_method_1 = cl_m + "." + upd_method
-				print "Here is the method!!!!"+t_method
+				print("Here is the method!!!!"+t_method)
 				cl_m_l = re.split("/", cl_m)
 				# keep class, method and signature
 				#tmthd = cl_m_l[len(cl_m_l) - 1] + "." + upd_method
@@ -312,17 +311,17 @@ def parse_jimple(file, app_name, api_version, api_dict, lib_dict, exc_dict, dict
 				total_sig = re.sub(" ", "", tmthd)
 				total_sig_1 = re.sub("\).+", ")", total_sig)
 				total_sig_2 = re.sub("\n", "", total_sig_1)
-				print "t_method:",total_sig_2
+				print("t_method:",total_sig_2)
 				#if isinstance(th, list):
 				app_throws.setdefault(total_sig_2, th)
 				#else:
 				#	app_throws.setdefault(total_sig_2, []).append(th)
-				print "Here throws finishes!"				
+				print("Here throws finishes!")
 
 			method_sig = re.search(p1, lines[l]).group()
 			method_s = re.search(p8, method_sig).group()
-			print file
-			print "Here we continue: " + method_s
+			print(file)
+			print("Here we continue: " + method_s)
 			method_nm = re.split("\(", method_s)
 			upd_method = update_md_args(method_s)
 			t_method = cl_m + "." + upd_method
@@ -408,10 +407,10 @@ def parse_jimple(file, app_name, api_version, api_dict, lib_dict, exc_dict, dict
 							j_class_list = re.split("\.",j_file)
 							j_class = j_class_list[len(j_class_list)-2] + ".java"
 							line = str(l_l_no[1])
-							exceptions_list = Set(excp_api)
+							exceptions_list = set(excp_api)
 							uniq_exc_list = list(exceptions_list)
 							# new code here
-							lib_keys = dict_exc.keys()
+							lib_keys = list(dict_exc.keys())
 							for y, t in enumerate(lib_keys):
 								if (api_m == lib_keys[y]):
 									libr_exc = dict_exc[api_m]
@@ -464,7 +463,7 @@ def parse_jimple(file, app_name, api_version, api_dict, lib_dict, exc_dict, dict
 		# in case of exceptions (catch clause in jimple file)
 		catch_ptrn = re.search(p12, lines[l])
 		if ((l + 1 < len(lines)) and (catch_ptrn) and (is_method == 1) and (is_serial ==0)):
-			print "found catch!"
+			print("found catch!")
 			new_catch = catch_ptrn.group()
 			# initialize dictionary for new_catch (as it was for a new label!)
 			attributes = {}
@@ -473,12 +472,12 @@ def parse_jimple(file, app_name, api_version, api_dict, lib_dict, exc_dict, dict
 			attributes.setdefault("exceptions", [])
 			m_dict.setdefault(new_catch, attributes)
 			#attributes.setdefault("lines", []).append(lines[l])
-			print "first new current line"+lines[l]
+			print("first new current line"+lines[l])
 			locate_labels_in_catch(lines[l], m_dict, attributes)
-			print "new current line"+lines[l]
+			print("new current line"+lines[l])
 		# in case of a new method
 		if (l + 2 < len(lines)) and not (re.search(p14, lines[l + 1])) and not (re.search(p15, lines[l + 1])) and (is_method == 1) and (re.search(p1, lines[l + 1]) and re.search(p2, lines[l + 2]) and (is_serial ==0)):
-			print "\nOKKK: " + tmthd + " " + str(m_dict)
+			print("\nOKKK: " + tmthd + " " + str(m_dict))
 			m_catch_dict = m_dict
 			class_name = re.split("/",file)
 			clazz_name = class_name[len(class_name)-1]
@@ -595,7 +594,7 @@ def keep_exc_name(exc):
 
 # find labels, API methods, and exceptions and add them in catch's dictionary accordingly
 def locate_labels_in_catch(line, m_dict, attributes):
-        print "current m_dict: "+str(m_dict)
+	print("current m_dict: "+str(m_dict))
 	# list for the labels in catch (e.g. catch java.lang.Throwable from label1 to label2 with label3;)
 	labels_lst = []
 	# keys (labels) from dictionary
@@ -617,7 +616,7 @@ def locate_labels_in_catch(line, m_dict, attributes):
 		if (ptrn_l):
 			ptrn = ptrn_l.group()
 			labels_lst.append(ptrn)
-			print "labels lst: " + str(labels_lst)
+			print("labels lst: " + str(labels_lst))
 	# search for the labels and their attributes in the current method's dictionary
 	for k, l in enumerate(m_dict_keys):
 		# "first " label in catch
@@ -691,7 +690,7 @@ def add_dict_to_JSON(app_dict_might_thrown_exc, app_name):
 
 def exclude_caught_prop_excps_in_client(lib_dict):
 	#print app_dict_might_thrown_exc
-	app_keys = app_dict.keys()
+	app_keys = list(app_dict.keys())
 
 	#tmthd = "java.time.Duration.parseNumber(CharSequence, String, int, String)"
 	#m_dict = app_dict[tmthd]
@@ -705,14 +704,14 @@ def exclude_caught_prop_excps_in_client(lib_dict):
 # compare API methods and exceptions between app_dict and lib_dict_dict
 def apply_set_operations(tmthd, m_dict, lib_dict, app_name, api_ver, exc_dict, dict_exc):
 	# get values from dictionary for catch label attributes
-	m_dict_keys = m_dict.keys()
+	m_dict_keys = list(m_dict.keys())
 	for k, l in enumerate(m_dict_keys):
 		if (re.search("(catch).*", m_dict_keys[k])):
 			attributes = m_dict.get(m_dict_keys[k])
 			api_mthd = attributes.get('api_methods')
 			excp = attributes.get('exceptions')
 			# check if the apis in try-catch exist in the lib dict with the might-thrown exceptions
-			lib_dict_keys = lib_dict.keys()
+			lib_dict_keys = list(lib_dict.keys())
 			for d, c in enumerate(lib_dict_keys):
 				lib_method = lib_dict_keys[d]
 				node_dict = lib_dict[lib_method]
@@ -731,17 +730,17 @@ def apply_set_operations(tmthd, m_dict, lib_dict, app_name, api_ver, exc_dict, d
 								exc_line = list_orig[j]
 								exc = exc_line[1]
 								exc_keys = exc_dict.keys()
-								exc_parents = Set(exc_dict[exc])
-								comm_exc = exc_parents.intersection(Set(excp))
-								print "Common exc ", comm_exc
+								exc_parents = set(exc_dict[exc])
+								comm_exc = exc_parents.intersection(set(excp))
+								print("Common exc ", comm_exc)
 								if (((lib_method in api_mthd) and (len(comm_exc) > 0)) or ((lib_method in api_mthd) and ("java.lang.Exception" in excp))):
-									print "Old node 0: " + str(node_dict) + "\n"
-									print "Old call 0: " + str(app_dict_might_thrown_exc[call]) + "\n"
-									print "App method and catch: " + tmthd + str(m_dict) + "\n"
-									print "Removed level entry: " + str(list_orig[j]) + "\n"
+									print("Old node 0: " + str(node_dict) + "\n")
+									print("Old call 0: " + str(app_dict_might_thrown_exc[call]) + "\n")
+									print("App method and catch: " + tmthd + str(m_dict) + "\n")
+									print("Removed level entry: " + str(list_orig[j]) + "\n")
 									n_dict_0.remove(list_orig[j])
-									print "New call 0: " + str(app_dict_might_thrown_exc[call]) + "\n"
-									print "New node 0: " + str(node_dict) + "\n"
+									print("New call 0: " + str(app_dict_might_thrown_exc[call]) + "\n")
+									print("New node 0: " + str(node_dict) + "\n")
 						# thrown exception from API call (exception declared with _throw new_ in the called method's body)
 						if (len(n_dict["level_1"]) > 0):
 							list_orig = copy.deepcopy(n_dict["level_1"])
@@ -751,25 +750,25 @@ def apply_set_operations(tmthd, m_dict, lib_dict, app_name, api_ver, exc_dict, d
 								exc_line = api_call[1]
 								api = api_line[1]
 								exc = exc_line[1]
-								print "Client method and exceptions: " + tmthd + str(m_dict) + "\n"
-								print "Lib api and exc" + api + " " + exc + "\n"
-								print "Node 1: " + str(node_dict) + "\n"
+								print("Client method and exceptions: " + tmthd + str(m_dict) + "\n")
+								print("Lib api and exc" + api + " " + exc + "\n")
+								print("Node 1: " + str(node_dict) + "\n")
 								exc_keys = exc_dict.keys()
-								exc_parents = Set(exc_dict[exc])
-								comm_exc = exc_parents.intersection(Set(excp))
+								exc_parents = set(exc_dict[exc])
+								comm_exc = exc_parents.intersection(set(excp))
 								if (((lib_method in api_mthd) and (len(comm_exc) > 0)) or ((lib_method in api_mthd) and ("java.lang.Exception" in excp))):
-									print "Found api and exception!!!"
-									print "Found api and exception!!!"
-									print "Old node 1: " + str(node_dict)
+									print("Found api and exception!!!")
+									print("Found api and exception!!!")
+									print("Old node 1: " + str(node_dict))
 									call = str(tmthd) + "-" + str(lib_method)
 									#print app_dict_might_thrown_exc
 									call_dict = app_dict_might_thrown_exc[call]
 									n_dict = call_dict['exception-list']
 									n_dict["level_1"].remove(list_orig[j])
 									#node_dict["level_1"].remove(list_orig[j])
-									print tmthd + str(m_dict) + "\n"
-									print "Removed 1: " + str(list_orig[j]) + "\n"
-									print "New node 1: " + str(node_dict) + "\n"
+									print(tmthd + str(m_dict) + "\n")
+									print("Removed 1: " + str(list_orig[j]) + "\n")
+									print("New node 1: " + str(node_dict) + "\n")
 						# propagated exceptions via the called method
 						if (len(n_dict["level_2"]) > 0):
 							list_orig = copy.deepcopy(n_dict["level_2"])
@@ -783,40 +782,40 @@ def apply_set_operations(tmthd, m_dict, lib_dict, app_name, api_ver, exc_dict, d
 								callee = callee_line[1]
 								exc = exc_line[1]
 								exc_keys = exc_dict.keys()
-								exc_parents = Set(exc_dict[exc])
-								comm_exc = exc_parents.intersection(Set(excp))
+								exc_parents = set(exc_dict[exc])
+								comm_exc = exc_parents.intersection(set(excp))
 								if (((lib_method in api_mthd) and (len(comm_exc) > 0)) or ((lib_method in api_mthd) and ("java.lang.Exception" in excp))):
-									print "Found api and exception!!!"
-									print "Old node 2: " + str(node_dict) + "\n"
-									print "Found api and exception!!!"
-									print "Old node 1: " + str(node_dict)
+									print("Found api and exception!!!")
+									print("Old node 2: " + str(node_dict) + "\n")
+									print("Found api and exception!!!")
+									print("Old node 1: " + str(node_dict))
 									n_dict["level_2"].remove(list_orig[l])
 									#node_dict["level_2"].remove(list_orig[l])
-									print tmthd + str(m_dict) + "\n"
-									print "Removed 2: " + str(list_orig[l])
-									print "New node 2: " + str(node_dict) + "\n"
+									print(tmthd + str(m_dict) + "\n")
+									print("Removed 2: " + str(list_orig[l]))
+									print("New node 2: " + str(node_dict) + "\n")
 						if ((len(n_dict["level_0"]) <= 0) and (len(n_dict["level_1"]) <= 0) and (len(n_dict["level_2"]) <= 0)):
 							del app_dict_might_thrown_exc[call]
 
 def check_throws(app_dict_might_thrown_exc, app_throws, exc_dict):
 	exc_lst_a_g = []
-	app_might_thrown_keys = app_dict_might_thrown_exc.keys()
-	app_throws_keys = app_throws.keys()
+	app_might_thrown_keys = list(app_dict_might_thrown_exc.keys())
+	app_throws_keys = list(app_throws.keys())
 	for k, l in enumerate(app_might_thrown_keys):
 		#print app_might_thrown_keys[k]
 		call_dict = app_dict_might_thrown_exc[app_might_thrown_keys[k]]
 		n_dict = call_dict.get('exception-list')
 		call_site_sig = call_dict.get('call-site-sig')
 		# check if the client method is in the dictionary with the declared exceptions (throws)
-		print "\n"
-		print "Call site for throws: "+str(call_site_sig)
-		print "n_dict: "+str(n_dict)
+		print("\n")
+		print("Call site for throws: "+str(call_site_sig))
+		print("n_dict: "+str(n_dict))
 		#print "List for app throws: "+str(app_throws)
-		print "\n"
+		print("\n")
 		if (call_site_sig in app_throws_keys):
-			print "Common methods"
+			print("Common methods")
 			# get the (declared) exceptions (value) of this method
-			print "Get throws from app throws: "+str(app_throws.get(call_site_sig))
+			print("Get throws from app throws: "+str(app_throws.get(call_site_sig)))
 			exc_lst_a = app_throws.get(call_site_sig)
 			#exc_lst_a = []
 			#if isinstance(app_throws.get(call_site_sig), list):
@@ -834,15 +833,15 @@ def check_throws(app_dict_might_thrown_exc, app_throws, exc_dict):
 					exc = exc_line[1]
 					exc_keys = exc_dict.keys()
 					# get the parents of the exception
-					exc_parents = Set(exc_dict[exc])
+					exc_parents = set(exc_dict[exc])
 					# intersection of the set from the exceptions hierarchy and the list of app_throws
-					comm_exc = exc_parents.intersection(Set(exc_lst_a))
+					comm_exc = exc_parents.intersection(set(exc_lst_a))
 					if (exc in exc_lst_a) or ("java.lang.Exception" in exc_lst_a) or (len(comm_exc) > 0):
-						print "Exception to remove:"+str(list_orig[j])+" for "+str(call_site_sig)
+						print("Exception to remove:"+str(list_orig[j])+" for "+str(call_site_sig))
 						n_dict_0.remove(list_orig[j])
 			if (len(n_dict["level_1"]) > 0):
 				list_orig = copy.deepcopy(n_dict["level_1"])
-				print list_orig
+				print(list_orig)
 				for j, g in enumerate(list_orig):
 					api_call = list_orig[j]
 					api_line = api_call[0]
@@ -851,33 +850,33 @@ def check_throws(app_dict_might_thrown_exc, app_throws, exc_dict):
 					exc = exc_line[1]
 					exc_keys = exc_dict.keys()
 					#exc_parents = Set(map(str, exc_dict[exc]))
-					exc_parents = Set(exc_dict[exc])
-					print str(call_site_sig)
-					print exc_parents
+					exc_parents = set(exc_dict[exc])
+					print(str(call_site_sig))
+					print(exc_parents)
 					#exc_lst_a_1 = []
 					#if not isinstance(exc_lst_a, list):
 					#	exc_lst_a_1.append(exc_lst_a)
 					#	exc_lst_a_g=exc_lst_a_1
 					#else:
 					#	exc_lst_a_g=exc_lst_a
-					print "exc list: "+str(exc_lst_a)
+					print("exc list: "+str(exc_lst_a))
 					#exc_lst_a = []
 					#exc_lst_a.append(exc_lst_a)
 					#exc_lst_a_g=exc_lst_a_1
 					if isinstance(exc_lst_a, list):
-						print Set(exc_lst_a)
-						comm_exc = exc_parents.intersection(Set(exc_lst_a))
-						print "Common exc: "+str(comm_exc)
+						print(set(exc_lst_a))
+						comm_exc = exc_parents.intersection(set(exc_lst_a))
+						print("Common exc: "+str(comm_exc))
 						if (exc in exc_lst_a) or ("java.lang.Exception" in exc_lst_a) or (len(comm_exc) > 0):
-							print "Exception to remove:"+str(list_orig[j])+" for "+str(api)
+							print("Exception to remove:"+str(list_orig[j])+" for "+str(api))
 							n_dict["level_1"].remove(list_orig[j])
 					else:
-						print exc_lst_a
+						print(exc_lst_a)
 						if (exc_lst_a in list(exc_parents)):
-							print "Common exc: "+str(exc_lst_a)
-						        if (exc == exc_lst_a) or ("java.lang.Exception" == exc_lst_a) or (exc_lst_a in list(exc_parents)):
-                                                            print "Exception to remove:"+str(list_orig[j])+" for "+str(api)
-                                                            n_dict["level_1"].remove(list_orig[j])
+							print("Common exc: "+str(exc_lst_a))
+							if (exc == exc_lst_a) or ("java.lang.Exception" == exc_lst_a) or (exc_lst_a in list(exc_parents)):
+																											print("Exception to remove:"+str(list_orig[j])+" for "+str(api))
+																											n_dict["level_1"].remove(list_orig[j])
 			# propagated exceptions via the called method
 			if (len(n_dict["level_2"]) > 0):
 				list_orig = copy.deepcopy(n_dict["level_2"])
@@ -891,10 +890,10 @@ def check_throws(app_dict_might_thrown_exc, app_throws, exc_dict):
 					callee = callee_line[1]
 					exc = exc_line[1]
 					exc_keys = exc_dict.keys()
-					exc_parents = Set(exc_dict[exc])
-					comm_exc = exc_parents.intersection(Set(exc_lst_a))
+					exc_parents = set(exc_dict[exc])
+					comm_exc = exc_parents.intersection(set(exc_lst_a))
 					if (exc in exc_lst_a) or ("java.lang.Exception" in exc_lst_a) or (len(comm_exc) > 0):
-						print "Exception to remove:"+str(list_orig[l])+" for "+str(caller)
+						print("Exception to remove:"+str(list_orig[l])+" for "+str(caller))
 						n_dict["level_2"].remove(list_orig[l])
 			if ((len(n_dict["level_0"]) <= 0) and (len(n_dict["level_1"]) <= 0) and (len(n_dict["level_2"]) <= 0)):
 					del app_dict_might_thrown_exc[app_might_thrown_keys[k]]
