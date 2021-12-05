@@ -1,0 +1,531 @@
+{
+    "com.joestelmach.natty.DateGroup.getAbsolutePosition()-java.lang.String.charAt(int)": {
+        "call-site-line": "53",
+        "call-site-sig": "com.joestelmach.natty.DateGroup.getAbsolutePosition()",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "DateGroup.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    },
+    "com.joestelmach.natty.DateGroup.getPrefix(int)-java.lang.String.substring(int, int)": {
+        "call-site-line": "105",
+        "call-site-sig": "com.joestelmach.natty.DateGroup.getPrefix(int)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "DateGroup.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "com.joestelmach.natty.DateGroup.getSuffix(int)-java.lang.String.substring(int, int)": {
+        "call-site-line": "121",
+        "call-site-sig": "com.joestelmach.natty.DateGroup.getSuffix(int)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "DateGroup.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "com.joestelmach.natty.generated.DateParser.seconds()-java.lang.Integer.parseInt(String)": {
+        "call-site-line": "34892",
+        "call-site-sig": "com.joestelmach.natty.generated.DateParser.seconds()",
+        "api-method-sig": "java.lang.Integer.parseInt(String)",
+        "java-file-path": "DateParser.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "615",
+                        "java.lang.Integer.parseInt(String, int)"
+                    ],
+                    [
+                        "578",
+                        "java.lang.String.charAt(int)"
+                    ],
+                    [
+                        "658",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.Integer.parseInt(String)"
+        }
+    },
+    "com.joestelmach.natty.Parser.parse(java.lang.String,java.util.Date)-java.util.Iterator.remove()": {
+        "call-site-line": "124",
+        "call-site-sig": "com.joestelmach.natty.Parser.parse(java.lang.String,java.util.Date)",
+        "api-method-sig": "java.util.Iterator.remove()",
+        "java-file-path": "Parser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "93",
+                    "java.lang.UnsupportedOperationException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.util.Iterator.remove()"
+        }
+    },
+    "com.joestelmach.natty.Parser.parse(java.lang.String,java.util.Date)-java.lang.String.charAt(int)": {
+        "call-site-line": "157",
+        "call-site-sig": "com.joestelmach.natty.Parser.parse(java.lang.String,java.util.Date)",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "Parser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    },
+    "com.joestelmach.natty.Parser.isAllNumeric(org.antlr.runtime.TokenStream)-java.lang.Integer.parseInt(String)": {
+        "call-site-line": "170",
+        "call-site-sig": "com.joestelmach.natty.Parser.isAllNumeric(org.antlr.runtime.TokenStream)",
+        "api-method-sig": "java.lang.Integer.parseInt(String)",
+        "java-file-path": "Parser.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "615",
+                        "java.lang.Integer.parseInt(String, int)"
+                    ],
+                    [
+                        "578",
+                        "java.lang.String.charAt(int)"
+                    ],
+                    [
+                        "658",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.Integer.parseInt(String)"
+        }
+    },
+    "com.joestelmach.natty.Parser.singleParse(org.antlr.runtime.TokenStream,java.lang.String,java.util.Date)-java.lang.String.charAt(int)": {
+        "call-site-line": "247",
+        "call-site-sig": "com.joestelmach.natty.Parser.singleParse(org.antlr.runtime.TokenStream,java.lang.String,java.util.Date)",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "Parser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    },
+    "com.joestelmach.natty.Holiday.valueOf(java.lang.String)-java.lang.Enum.valueOf(Class, String)": {
+        "call-site-line": "6",
+        "call-site-sig": "com.joestelmach.natty.Holiday.valueOf(java.lang.String)",
+        "api-method-sig": "java.lang.Enum.valueOf(Class, String)",
+        "java-file-path": "Holiday.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "236",
+                    "java.lang.NullPointerException"
+                ],
+                [
+                    "238",
+                    "java.lang.IllegalArgumentException"
+                ]
+            ],
+            "level_1": [
+                [
+                    [
+                        "232",
+                        "java.lang.Class.enumConstantDirectory()"
+                    ],
+                    [
+                        "3344",
+                        "java.lang.IllegalArgumentException"
+                    ]
+                ]
+            ],
+            "level_2": [],
+            "id": "java.lang.Enum.valueOf(Class, String)"
+        }
+    },
+    "com.joestelmach.natty.ParseListener.exitRule(java.lang.String,java.lang.String)-java.util.Stack.pop()": {
+        "call-site-line": "58",
+        "call-site-sig": "com.joestelmach.natty.ParseListener.exitRule(java.lang.String,java.lang.String)",
+        "api-method-sig": "java.util.Stack.pop()",
+        "java-file-path": "ParseListener.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [
+                [
+                    [
+                        "84",
+                        "java.util.Stack.peek()"
+                    ],
+                    [
+                        "102",
+                        "java.util.EmptyStackException"
+                    ]
+                ]
+            ],
+            "level_2": [],
+            "id": "java.util.Stack.pop()"
+        }
+    },
+    "com.joestelmach.natty.Season.valueOf(java.lang.String)-java.lang.Enum.valueOf(Class, String)": {
+        "call-site-line": "6",
+        "call-site-sig": "com.joestelmach.natty.Season.valueOf(java.lang.String)",
+        "api-method-sig": "java.lang.Enum.valueOf(Class, String)",
+        "java-file-path": "Season.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "236",
+                    "java.lang.NullPointerException"
+                ],
+                [
+                    "238",
+                    "java.lang.IllegalArgumentException"
+                ]
+            ],
+            "level_1": [
+                [
+                    [
+                        "232",
+                        "java.lang.Class.enumConstantDirectory()"
+                    ],
+                    [
+                        "3344",
+                        "java.lang.IllegalArgumentException"
+                    ]
+                ]
+            ],
+            "level_2": [],
+            "id": "java.lang.Enum.valueOf(Class, String)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.seekToDayOfWeek(java.lang.String,java.lang.String,java.lang.String,java.lang.String)-java.util.GregorianCalendar.add(int, int)": {
+        "call-site-line": "94",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.seekToDayOfWeek(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "api-method-sig": "java.util.GregorianCalendar.add(int, int)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "919",
+                    "java.lang.IllegalArgumentException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.util.GregorianCalendar.add(int, int)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.seekToDayOfMonth(java.lang.String)-java.util.GregorianCalendar.getActualMaximum(int)": {
+        "call-site-line": "123",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.seekToDayOfMonth(java.lang.String)",
+        "api-method-sig": "java.util.GregorianCalendar.getActualMaximum(int)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1979",
+                    "java.lang.ArrayIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [
+                [
+                    [
+                        "1883",
+                        "java.util.GregorianCalendar.add(int, int)"
+                    ],
+                    [
+                        "919",
+                        "java.lang.IllegalArgumentException"
+                    ]
+                ]
+            ],
+            "level_2": [],
+            "id": "java.util.GregorianCalendar.getActualMaximum(int)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.seekToDayOfYear(java.lang.String)-java.util.GregorianCalendar.getActualMaximum(int)": {
+        "call-site-line": "140",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.seekToDayOfYear(java.lang.String)",
+        "api-method-sig": "java.util.GregorianCalendar.getActualMaximum(int)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1979",
+                    "java.lang.ArrayIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [
+                [
+                    [
+                        "1883",
+                        "java.util.GregorianCalendar.add(int, int)"
+                    ],
+                    [
+                        "919",
+                        "java.lang.IllegalArgumentException"
+                    ]
+                ]
+            ],
+            "level_2": [],
+            "id": "java.util.GregorianCalendar.getActualMaximum(int)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.seekToMonth(java.lang.String,java.lang.String,java.lang.String)-java.util.GregorianCalendar.add(int, int)": {
+        "call-site-line": "189",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.seekToMonth(java.lang.String,java.lang.String,java.lang.String)",
+        "api-method-sig": "java.util.GregorianCalendar.add(int, int)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "919",
+                    "java.lang.IllegalArgumentException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.util.GregorianCalendar.add(int, int)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.seekBySpan(java.lang.String,java.lang.String,java.lang.String)-java.lang.Integer.parseInt(String)": {
+        "call-site-line": "209",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.seekBySpan(java.lang.String,java.lang.String,java.lang.String)",
+        "api-method-sig": "java.lang.Integer.parseInt(String)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "615",
+                        "java.lang.Integer.parseInt(String, int)"
+                    ],
+                    [
+                        "578",
+                        "java.lang.String.charAt(int)"
+                    ],
+                    [
+                        "658",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.Integer.parseInt(String)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.seekBySpan(java.lang.String,java.lang.String,java.lang.String)-java.util.GregorianCalendar.add(int, int)": {
+        "call-site-line": "236",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.seekBySpan(java.lang.String,java.lang.String,java.lang.String)",
+        "api-method-sig": "java.util.GregorianCalendar.add(int, int)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "919",
+                    "java.lang.IllegalArgumentException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.util.GregorianCalendar.add(int, int)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.setDayOfWeekIndex(java.lang.String,java.lang.String)-java.lang.Integer.parseInt(String)": {
+        "call-site-line": "247",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.setDayOfWeekIndex(java.lang.String,java.lang.String)",
+        "api-method-sig": "java.lang.Integer.parseInt(String)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "615",
+                        "java.lang.Integer.parseInt(String, int)"
+                    ],
+                    [
+                        "578",
+                        "java.lang.String.charAt(int)"
+                    ],
+                    [
+                        "658",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.Integer.parseInt(String)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.setDayOfWeekIndex(java.lang.String,java.lang.String)-java.util.GregorianCalendar.add(int, int)": {
+        "call-site-line": "257",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.setDayOfWeekIndex(java.lang.String,java.lang.String)",
+        "api-method-sig": "java.util.GregorianCalendar.add(int, int)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "919",
+                    "java.lang.IllegalArgumentException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.util.GregorianCalendar.add(int, int)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.setExplicitDate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)-java.lang.Integer.parseInt(String)": {
+        "call-site-line": "293",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.setExplicitDate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "api-method-sig": "java.lang.Integer.parseInt(String)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "615",
+                        "java.lang.Integer.parseInt(String, int)"
+                    ],
+                    [
+                        "578",
+                        "java.lang.String.charAt(int)"
+                    ],
+                    [
+                        "658",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.Integer.parseInt(String)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.setExplicitDate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)-java.util.GregorianCalendar.roll(int, boolean)": {
+        "call-site-line": "311",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.setExplicitDate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "api-method-sig": "java.util.GregorianCalendar.roll(int, boolean)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [
+                [
+                    [
+                        "1111",
+                        "java.util.GregorianCalendar.roll(int, int)"
+                    ],
+                    [
+                        "1167",
+                        "java.lang.IllegalArgumentException"
+                    ]
+                ]
+            ],
+            "level_2": [
+                [
+                    [
+                        "1111",
+                        "java.util.GregorianCalendar.roll(int, int)"
+                    ],
+                    [
+                        "1426",
+                        "java.util.GregorianCalendar.getActualMaximum(int)"
+                    ],
+                    [
+                        "1979",
+                        "java.lang.ArrayIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.util.GregorianCalendar.roll(int, boolean)"
+        }
+    },
+    "com.joestelmach.natty.WalkerState.setExplicitTime(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)-java.lang.Integer.parseInt(String)": {
+        "call-site-line": "371",
+        "call-site-sig": "com.joestelmach.natty.WalkerState.setExplicitTime(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "api-method-sig": "java.lang.Integer.parseInt(String)",
+        "java-file-path": "WalkerState.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "615",
+                        "java.lang.Integer.parseInt(String, int)"
+                    ],
+                    [
+                        "578",
+                        "java.lang.String.charAt(int)"
+                    ],
+                    [
+                        "658",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.Integer.parseInt(String)"
+        }
+    }
+}
