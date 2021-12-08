@@ -598,7 +598,7 @@ def locate_labels_in_catch(line, m_dict, attributes):
 	# list for the labels in catch (e.g. catch java.lang.Throwable from label1 to label2 with label3;)
 	labels_lst = []
 	# keys (labels) from dictionary
-	m_dict_keys = m_dict.keys()
+	m_dict_keys = list(m_dict.keys())
 	# states for labels
 	state = 0
 	# last label to search for new exceptions
