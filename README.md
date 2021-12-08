@@ -33,7 +33,12 @@ The structure of the experiment folder is the following:
 
 Tool that combines static exception propagation and search-based software testing to automatically detect (and generate test cases) for API misuses in Java client programs.
 
+# Evaluation Replication Instructions
 
+We chose to evaluate Catcher using an empirical approach. This consisted of cross-checking reported misuses with the source code of the selected projects. To replicate our results, we have included the following files for your viewing:
+
+1.	The files that contain the identified misuses for the subjects of our study are provided in data/apitestgen/evaluation/experiment. The erec.json file for each subject contains the misuses reported by Catcher. 
+2.	We have also included the source code for each subject in the form of jar files in data/apitestgen/evaluation/subjects. 
 
 # Execution
 
