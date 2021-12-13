@@ -1,0 +1,1750 @@
+{
+    "org.apache.commons.cli.TypeHandler.createObject(java.lang.String)-java.lang.StringBuilder.append(String)": {
+        "call-site-line": "123",
+        "call-site-sig": "org.apache.commons.cli.TypeHandler.createObject(java.lang.String)",
+        "api-method-sig": "java.lang.StringBuilder.append(String)",
+        "java-file-path": "TypeHandler.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuilder.append(String)"
+        }
+    },
+    "org.apache.commons.cli.TypeHandler.createClass(java.lang.String)-java.lang.StringBuilder.append(String)": {
+        "call-site-line": "175",
+        "call-site-sig": "org.apache.commons.cli.TypeHandler.createClass(java.lang.String)",
+        "api-method-sig": "java.lang.StringBuilder.append(String)",
+        "java-file-path": "TypeHandler.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuilder.append(String)"
+        }
+    },
+    "org.apache.commons.cli.TypeHandler.createURL(java.lang.String)-java.lang.StringBuilder.append(String)": {
+        "call-site-line": "210",
+        "call-site-sig": "org.apache.commons.cli.TypeHandler.createURL(java.lang.String)",
+        "api-method-sig": "java.lang.StringBuilder.append(String)",
+        "java-file-path": "TypeHandler.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuilder.append(String)"
+        }
+    },
+    "org.apache.commons.cli.MissingOptionException.createMessage(java.util.List)-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "78",
+        "call-site-sig": "org.apache.commons.cli.MissingOptionException.createMessage(java.util.List)",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "MissingOptionException.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.MissingOptionException.createMessage(java.util.List)-java.lang.StringBuffer.append(Object)": {
+        "call-site-line": "84",
+        "call-site-sig": "org.apache.commons.cli.MissingOptionException.createMessage(java.util.List)",
+        "api-method-sig": "java.lang.StringBuffer.append(Object)",
+        "java-file-path": "MissingOptionException.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "263",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "263",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "263",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(Object)"
+        }
+    },
+    "org.apache.commons.cli.GnuParser.flatten(org.apache.commons.cli.Options,java.lang.String[],boolean)-java.lang.String.substring(int, int)": {
+        "call-site-line": "98",
+        "call-site-sig": "org.apache.commons.cli.GnuParser.flatten(org.apache.commons.cli.Options,java.lang.String[],boolean)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "GnuParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.GnuParser.flatten(org.apache.commons.cli.Options,java.lang.String[],boolean)-java.lang.String.substring(int)": {
+        "call-site-line": "84",
+        "call-site-sig": "org.apache.commons.cli.GnuParser.flatten(org.apache.commons.cli.Options,java.lang.String[],boolean)",
+        "api-method-sig": "java.lang.String.substring(int)",
+        "java-file-path": "GnuParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1927",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1931",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int)"
+        }
+    },
+    "org.apache.commons.cli.OptionValidator.validateOption(java.lang.String)-java.lang.String.charAt(int)": {
+        "call-site-line": "56",
+        "call-site-sig": "org.apache.commons.cli.OptionValidator.validateOption(java.lang.String)",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "OptionValidator.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    },
+    "org.apache.commons.cli.OptionValidator.validateOption(java.lang.String)-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "60",
+        "call-site-sig": "org.apache.commons.cli.OptionValidator.validateOption(java.lang.String)",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "OptionValidator.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.AmbiguousOptionException.createMessage(java.lang.String,java.util.Collection)-java.lang.StringBuilder.append(String)": {
+        "call-site-line": "76",
+        "call-site-sig": "org.apache.commons.cli.AmbiguousOptionException.createMessage(java.lang.String,java.util.Collection)",
+        "api-method-sig": "java.lang.StringBuilder.append(String)",
+        "java-file-path": "AmbiguousOptionException.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "136",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuilder.append(String)"
+        }
+    },
+    "org.apache.commons.cli.Options.toString()-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "251",
+        "call-site-sig": "org.apache.commons.cli.Options.toString()",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "Options.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.Options.toString()-java.lang.StringBuffer.append(Object)": {
+        "call-site-line": "254",
+        "call-site-sig": "org.apache.commons.cli.Options.toString()",
+        "api-method-sig": "java.lang.StringBuffer.append(Object)",
+        "java-file-path": "Options.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "263",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "263",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "263",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(Object)"
+        }
+    },
+    "org.apache.commons.cli.DefaultParser.isShortOption(java.lang.String)-java.lang.String.substring(int)": {
+        "call-site-line": "312",
+        "call-site-sig": "org.apache.commons.cli.DefaultParser.isShortOption(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int)",
+        "java-file-path": "DefaultParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1927",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1931",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int)"
+        }
+    },
+    "org.apache.commons.cli.DefaultParser.isShortOption(java.lang.String)-java.lang.String.substring(int, int)": {
+        "call-site-line": "309",
+        "call-site-sig": "org.apache.commons.cli.DefaultParser.isShortOption(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "DefaultParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.DefaultParser.isShortOption(java.lang.String)-java.lang.String.charAt(int)": {
+        "call-site-line": "315",
+        "call-site-sig": "org.apache.commons.cli.DefaultParser.isShortOption(java.lang.String)",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "DefaultParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    },
+    "org.apache.commons.cli.DefaultParser.isLongOption(java.lang.String)-java.lang.String.substring(int, int)": {
+        "call-site-line": "331",
+        "call-site-sig": "org.apache.commons.cli.DefaultParser.isLongOption(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "DefaultParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.DefaultParser.handleShortAndLongOption(java.lang.String)-java.lang.String.substring(int)": {
+        "call-site-line": "520",
+        "call-site-sig": "org.apache.commons.cli.DefaultParser.handleShortAndLongOption(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int)",
+        "java-file-path": "DefaultParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1927",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1931",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int)"
+        }
+    },
+    "org.apache.commons.cli.DefaultParser.handleShortAndLongOption(java.lang.String)-java.lang.String.substring(int, int)": {
+        "call-site-line": "526",
+        "call-site-sig": "org.apache.commons.cli.DefaultParser.handleShortAndLongOption(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "DefaultParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.DefaultParser.getLongPrefix(java.lang.String)-java.lang.String.substring(int, int)": {
+        "call-site-line": "587",
+        "call-site-sig": "org.apache.commons.cli.DefaultParser.getLongPrefix(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "DefaultParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.DefaultParser.handleConcatenatedOptions(java.lang.String)-java.lang.String.charAt(int)": {
+        "call-site-line": "687",
+        "call-site-sig": "org.apache.commons.cli.DefaultParser.handleConcatenatedOptions(java.lang.String)",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "DefaultParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    },
+    "org.apache.commons.cli.DefaultParser.handleConcatenatedOptions(java.lang.String)-java.lang.String.substring(int)": {
+        "call-site-line": "696",
+        "call-site-sig": "org.apache.commons.cli.DefaultParser.handleConcatenatedOptions(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int)",
+        "java-file-path": "DefaultParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1927",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1931",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int)"
+        }
+    },
+    "org.apache.commons.cli.PosixParser.flatten(org.apache.commons.cli.Options,java.lang.String[],boolean)-java.lang.String.substring(int, int)": {
+        "call-site-line": "113",
+        "call-site-sig": "org.apache.commons.cli.PosixParser.flatten(org.apache.commons.cli.Options,java.lang.String[],boolean)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "PosixParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.PosixParser.flatten(org.apache.commons.cli.Options,java.lang.String[],boolean)-java.lang.String.substring(int)": {
+        "call-site-line": "126",
+        "call-site-sig": "org.apache.commons.cli.PosixParser.flatten(org.apache.commons.cli.Options,java.lang.String[],boolean)",
+        "api-method-sig": "java.lang.String.substring(int)",
+        "java-file-path": "PosixParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1927",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1931",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int)"
+        }
+    },
+    "org.apache.commons.cli.PosixParser.burstToken(java.lang.String,boolean)-java.lang.String.charAt(int)": {
+        "call-site-line": "250",
+        "call-site-sig": "org.apache.commons.cli.PosixParser.burstToken(java.lang.String,boolean)",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "PosixParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    },
+    "org.apache.commons.cli.PosixParser.burstToken(java.lang.String,boolean)-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "254",
+        "call-site-sig": "org.apache.commons.cli.PosixParser.burstToken(java.lang.String,boolean)",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "PosixParser.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.PosixParser.burstToken(java.lang.String,boolean)-java.lang.String.substring(int)": {
+        "call-site-line": "259",
+        "call-site-sig": "org.apache.commons.cli.PosixParser.burstToken(java.lang.String,boolean)",
+        "api-method-sig": "java.lang.String.substring(int)",
+        "java-file-path": "PosixParser.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1927",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1931",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.printHelp(java.io.PrintWriter,int,java.lang.String,java.lang.String,org.apache.commons.cli.Options,int,int,java.lang.String,boolean)-java.lang.String.trim()": {
+        "call-site-line": "495",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.printHelp(java.io.PrintWriter,int,java.lang.String,java.lang.String,org.apache.commons.cli.Options,int,int,java.lang.String,boolean)",
+        "api-method-sig": "java.lang.String.trim()",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [
+                [
+                    [
+                        "2878",
+                        "java.lang.String.substring(int, int)"
+                    ],
+                    [
+                        "1960",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "2878",
+                        "java.lang.String.substring(int, int)"
+                    ],
+                    [
+                        "1963",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "2878",
+                        "java.lang.String.substring(int, int)"
+                    ],
+                    [
+                        "1967",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "level_2": [],
+            "id": "java.lang.String.trim()"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.printUsage(java.io.PrintWriter,int,java.lang.String,org.apache.commons.cli.Options)-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "554",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.printUsage(java.io.PrintWriter,int,java.lang.String,org.apache.commons.cli.Options)",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.appendOptionGroup(java.lang.StringBuffer,org.apache.commons.cli.OptionGroup)-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "588",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.appendOptionGroup(java.lang.StringBuffer,org.apache.commons.cli.OptionGroup)",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.appendOption(java.lang.StringBuffer,org.apache.commons.cli.Option,boolean)-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "614",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.appendOption(java.lang.StringBuffer,org.apache.commons.cli.Option,boolean)",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.printUsage(java.io.PrintWriter,int,java.lang.String)-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "646",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.printUsage(java.io.PrintWriter,int,java.lang.String)",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.renderOptions(java.lang.StringBuffer,int,org.apache.commons.cli.Options,int,int)-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "738",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.renderOptions(java.lang.StringBuffer,int,org.apache.commons.cli.Options,int,int)",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.renderWrappedText(java.lang.StringBuffer,int,int,java.lang.String)-java.lang.String.substring(int, int)": {
+        "call-site-line": "820",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.renderWrappedText(java.lang.StringBuffer,int,int,java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.renderWrappedText(java.lang.StringBuffer,int,int,java.lang.String)-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "820",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.renderWrappedText(java.lang.StringBuffer,int,int,java.lang.String)",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.renderWrappedText(java.lang.StringBuffer,int,int,java.lang.String)-java.lang.String.substring(int)": {
+        "call-site-line": "834",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.renderWrappedText(java.lang.StringBuffer,int,int,java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1927",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1931",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.renderWrappedText(java.lang.StringBuffer,int,int,java.lang.String)-java.lang.String.trim()": {
+        "call-site-line": "834",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.renderWrappedText(java.lang.StringBuffer,int,int,java.lang.String)",
+        "api-method-sig": "java.lang.String.trim()",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [
+                [
+                    [
+                        "2878",
+                        "java.lang.String.substring(int, int)"
+                    ],
+                    [
+                        "1960",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "2878",
+                        "java.lang.String.substring(int, int)"
+                    ],
+                    [
+                        "1963",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "2878",
+                        "java.lang.String.substring(int, int)"
+                    ],
+                    [
+                        "1967",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "level_2": [],
+            "id": "java.lang.String.trim()"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.findWrapPos(java.lang.String,int,int)-java.lang.String.charAt(int)": {
+        "call-site-line": "896",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.findWrapPos(java.lang.String,int,int)",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.rtrim(java.lang.String)-java.lang.String.charAt(int)": {
+        "call-site-line": "952",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.rtrim(java.lang.String)",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    },
+    "org.apache.commons.cli.HelpFormatter.rtrim(java.lang.String)-java.lang.String.substring(int, int)": {
+        "call-site-line": "952",
+        "call-site-sig": "org.apache.commons.cli.HelpFormatter.rtrim(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "HelpFormatter.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.Util.stripLeadingHyphens(java.lang.String)-java.lang.String.substring(int, int)": {
+        "call-site-line": "44",
+        "call-site-sig": "org.apache.commons.cli.Util.stripLeadingHyphens(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "Util.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes(java.lang.String)-java.lang.String.substring(int, int)": {
+        "call-site-line": "71",
+        "call-site-sig": "org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "Util.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.OptionGroup.toString()-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "146",
+        "call-site-sig": "org.apache.commons.cli.OptionGroup.toString()",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "OptionGroup.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.Option.processValue(java.lang.String)-java.lang.String.substring(int, int)": {
+        "call-site-line": "443",
+        "call-site-sig": "org.apache.commons.cli.Option.processValue(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int, int)",
+        "java-file-path": "Option.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1960",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1963",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1967",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int, int)"
+        }
+    },
+    "org.apache.commons.cli.Option.processValue(java.lang.String)-java.lang.String.substring(int)": {
+        "call-site-line": "446",
+        "call-site-sig": "org.apache.commons.cli.Option.processValue(java.lang.String)",
+        "api-method-sig": "java.lang.String.substring(int)",
+        "java-file-path": "Option.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "1927",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ],
+                [
+                    "1931",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.substring(int)"
+        }
+    },
+    "org.apache.commons.cli.Option.toString()-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "560",
+        "call-site-sig": "org.apache.commons.cli.Option.toString()",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "Option.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.Option.toString()-java.lang.StringBuffer.append(Object)": {
+        "call-site-line": "575",
+        "call-site-sig": "org.apache.commons.cli.Option.toString()",
+        "api-method-sig": "java.lang.StringBuffer.append(Object)",
+        "java-file-path": "Option.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "263",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "263",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "263",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(Object)"
+        }
+    },
+    "org.apache.commons.cli.Option.clone()-java.lang.StringBuffer.append(String)": {
+        "call-site-line": "647",
+        "call-site-sig": "org.apache.commons.cli.Option.clone()",
+        "api-method-sig": "java.lang.StringBuffer.append(String)",
+        "java-file-path": "Option.java",
+        "exception-list": {
+            "level_0": [],
+            "level_1": [],
+            "level_2": [
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "818",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "821",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ],
+                [
+                    [
+                        "270",
+                        "java.lang.AbstractStringBuilder.append(String)"
+                    ],
+                    [
+                        "449",
+                        "java.lang.String.getChars(int, int, char[], int)"
+                    ],
+                    [
+                        "824",
+                        "java.lang.StringIndexOutOfBoundsException"
+                    ]
+                ]
+            ],
+            "id": "java.lang.StringBuffer.append(String)"
+        }
+    },
+    "org.apache.commons.cli.PatternOptionBuilder.parsePattern(java.lang.String)-java.lang.String.charAt(int)": {
+        "call-site-line": "160",
+        "call-site-sig": "org.apache.commons.cli.PatternOptionBuilder.parsePattern(java.lang.String)",
+        "api-method-sig": "java.lang.String.charAt(int)",
+        "java-file-path": "PatternOptionBuilder.java",
+        "exception-list": {
+            "level_0": [
+                [
+                    "658",
+                    "java.lang.StringIndexOutOfBoundsException"
+                ]
+            ],
+            "level_1": [],
+            "level_2": [],
+            "id": "java.lang.String.charAt(int)"
+        }
+    }
+}

@@ -1,0 +1,895 @@
+{
+    "java.lang.IllegalStateException": [
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.NonReadableChannelException": [
+        "java.nio.channels.NonReadableChannelException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.IllegalArgumentException": [
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.UnsupportedAddressTypeException": [
+        "java.nio.channels.UnsupportedAddressTypeException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.GeneralSecurityException": [
+        "java.security.GeneralSecurityException"
+    ],
+    "java.security.UnrecoverableEntryException": [
+        "java.security.UnrecoverableEntryException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.lang.RuntimeException": [
+        "java.lang.RuntimeException"
+    ],
+    "java.util.NoSuchElementException": [
+        "java.util.NoSuchElementException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.file.FileSystemException": [
+        "java.nio.file.FileSystemException",
+        "java.io.IOException"
+    ],
+    "java.nio.file.FileSystemLoopException": [
+        "java.nio.file.FileSystemLoopException",
+        "java.nio.file.FileSystemException",
+        "java.io.IOException"
+    ],
+    "java.security.ProviderException": [
+        "java.security.ProviderException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.ReflectiveOperationException": [
+        "java.lang.ReflectiveOperationException"
+    ],
+    "java.lang.IllegalAccessException": [
+        "java.lang.IllegalAccessException",
+        "java.lang.ReflectiveOperationException"
+    ],
+    "java.lang.Exception": [
+        "java.lang.Exception"
+    ],
+    "java.util.prefs.InvalidPreferencesFormatException": [
+        "java.util.prefs.InvalidPreferencesFormatException"
+    ],
+    "java.util.zip.DataFormatException": [
+        "java.util.zip.DataFormatException"
+    ],
+    "java.lang.IndexOutOfBoundsException": [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.ArrayIndexOutOfBoundsException": [
+        "java.lang.ArrayIndexOutOfBoundsException",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.NoSuchAlgorithmException": [
+        "java.security.NoSuchAlgorithmException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.lang.SecurityException": [
+        "java.lang.SecurityException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.PrivilegedActionException": [
+        "java.security.PrivilegedActionException"
+    ],
+    "java.security.KeyStoreException": [
+        "java.security.KeyStoreException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.io.IOException": [
+        "java.io.IOException"
+    ],
+    "java.net.SocketException": [
+        "java.net.SocketException",
+        "java.io.IOException"
+    ],
+    "java.util.IllegalFormatException": [
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.IllegalFormatFlagsException": [
+        "java.util.IllegalFormatFlagsException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.annotation.AnnotationTypeMismatchException": [
+        "java.lang.annotation.AnnotationTypeMismatchException",
+        "java.lang.RuntimeException"
+    ],
+    "java.text.ParseException": [
+        "java.text.ParseException"
+    ],
+    "java.lang.NoSuchMethodException": [
+        "java.lang.NoSuchMethodException",
+        "java.lang.ReflectiveOperationException"
+    ],
+    "java.util.UnknownFormatConversionException": [
+        "java.util.UnknownFormatConversionException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.UnsupportedOperationException": [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.DigestException": [
+        "java.security.DigestException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.nio.channels.OverlappingFileLockException": [
+        "java.nio.channels.OverlappingFileLockException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.charset.CharacterCodingException": [
+        "java.nio.charset.CharacterCodingException",
+        "java.io.IOException"
+    ],
+    "java.nio.file.ClosedDirectoryStreamException": [
+        "java.nio.file.ClosedDirectoryStreamException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.io.ObjectStreamException": [
+        "java.io.ObjectStreamException",
+        "java.io.IOException"
+    ],
+    "java.io.WriteAbortedException": [
+        "java.io.WriteAbortedException",
+        "java.io.ObjectStreamException",
+        "java.io.IOException"
+    ],
+    "java.io.OptionalDataException": [
+        "java.io.OptionalDataException",
+        "java.io.ObjectStreamException",
+        "java.io.IOException"
+    ],
+    "org.antlr.runtime.tree.RewriteCardinalityException": [
+        "org.antlr.runtime.tree.RewriteCardinalityException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.InterruptedException": [
+        "java.lang.InterruptedException"
+    ],
+    "java.util.FormatterClosedException": [
+        "java.util.FormatterClosedException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.zip.ZipException": [
+        "java.util.zip.ZipException",
+        "java.io.IOException"
+    ],
+    "java.util.jar.JarException": [
+        "java.util.jar.JarException",
+        "java.util.zip.ZipException",
+        "java.io.IOException"
+    ],
+    "java.lang.NegativeArraySizeException": [
+        "java.lang.NegativeArraySizeException",
+        "java.lang.RuntimeException"
+    ],
+    "java.net.UnknownHostException": [
+        "java.net.UnknownHostException",
+        "java.io.IOException"
+    ],
+    "java.io.EOFException": [
+        "java.io.EOFException",
+        "java.io.IOException"
+    ],
+    "java.util.InputMismatchException": [
+        "java.util.InputMismatchException",
+        "java.util.NoSuchElementException",
+        "java.lang.RuntimeException"
+    ],
+    "java.awt.geom.NoninvertibleTransformException": [
+        "java.awt.geom.NoninvertibleTransformException"
+    ],
+    "java.nio.channels.AlreadyConnectedException": [
+        "java.nio.channels.AlreadyConnectedException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.file.ClosedWatchServiceException": [
+        "java.nio.file.ClosedWatchServiceException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "org.antlr.runtime.tree.RewriteEarlyExitException": [
+        "org.antlr.runtime.tree.RewriteEarlyExitException",
+        "org.antlr.runtime.tree.RewriteCardinalityException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.NotYetBoundException": [
+        "java.nio.channels.NotYetBoundException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.UnresolvedAddressException": [
+        "java.nio.channels.UnresolvedAddressException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.NoSuchProviderException": [
+        "java.security.NoSuchProviderException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.nio.BufferOverflowException": [
+        "java.nio.BufferOverflowException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.NoConnectionPendingException": [
+        "java.nio.channels.NoConnectionPendingException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.ClosedChannelException": [
+        "java.nio.channels.ClosedChannelException",
+        "java.io.IOException"
+    ],
+    "java.nio.channels.AsynchronousCloseException": [
+        "java.nio.channels.AsynchronousCloseException",
+        "java.nio.channels.ClosedChannelException",
+        "java.io.IOException"
+    ],
+    "java.nio.channels.ConnectionPendingException": [
+        "java.nio.channels.ConnectionPendingException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.awt.image.RasterFormatException": [
+        "java.awt.image.RasterFormatException",
+        "java.lang.RuntimeException"
+    ],
+    "java.io.UncheckedIOException": [
+        "java.io.UncheckedIOException",
+        "java.lang.RuntimeException"
+    ],
+    "java.net.ProtocolException": [
+        "java.net.ProtocolException",
+        "java.io.IOException"
+    ],
+    "java.nio.channels.ClosedByInterruptException": [
+        "java.nio.channels.ClosedByInterruptException",
+        "java.nio.channels.AsynchronousCloseException",
+        "java.nio.channels.ClosedChannelException",
+        "java.io.IOException"
+    ],
+    "java.nio.ReadOnlyBufferException": [
+        "java.nio.ReadOnlyBufferException",
+        "java.lang.UnsupportedOperationException",
+        "java.lang.RuntimeException"
+    ],
+    "java.io.UnsupportedEncodingException": [
+        "java.io.UnsupportedEncodingException",
+        "java.io.IOException"
+    ],
+    "java.io.NotSerializableException": [
+        "java.io.NotSerializableException",
+        "java.io.ObjectStreamException",
+        "java.io.IOException"
+    ],
+    "java.awt.IllegalComponentStateException": [
+        "java.awt.IllegalComponentStateException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.awt.print.PrinterException": [
+        "java.awt.print.PrinterException"
+    ],
+    "java.awt.print.PrinterAbortException": [
+        "java.awt.print.PrinterAbortException",
+        "java.awt.print.PrinterException"
+    ],
+    "java.time.DateTimeException": [
+        "java.time.DateTimeException",
+        "java.lang.RuntimeException"
+    ],
+    "java.time.format.DateTimeParseException": [
+        "java.time.format.DateTimeParseException",
+        "java.time.DateTimeException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.AccessControlException": [
+        "java.security.AccessControlException",
+        "java.lang.SecurityException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.IllegalBlockingModeException": [
+        "java.nio.channels.IllegalBlockingModeException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.concurrent.TimeoutException": [
+        "java.util.concurrent.TimeoutException"
+    ],
+    "java.nio.charset.UnmappableCharacterException": [
+        "java.nio.charset.UnmappableCharacterException",
+        "java.nio.charset.CharacterCodingException",
+        "java.io.IOException"
+    ],
+    "java.nio.file.FileSystemAlreadyExistsException": [
+        "java.nio.file.FileSystemAlreadyExistsException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.file.ProviderMismatchException": [
+        "java.nio.file.ProviderMismatchException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.ClosedSelectorException": [
+        "java.nio.channels.ClosedSelectorException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.MissingResourceException": [
+        "java.util.MissingResourceException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.ClassCastException": [
+        "java.lang.ClassCastException",
+        "java.lang.RuntimeException"
+    ],
+    "java.io.NotActiveException": [
+        "java.io.NotActiveException",
+        "java.io.ObjectStreamException",
+        "java.io.IOException"
+    ],
+    "java.nio.charset.MalformedInputException": [
+        "java.nio.charset.MalformedInputException",
+        "java.nio.charset.CharacterCodingException",
+        "java.io.IOException"
+    ],
+    "java.nio.charset.UnsupportedCharsetException": [
+        "java.nio.charset.UnsupportedCharsetException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.DuplicateFormatFlagsException": [
+        "java.util.DuplicateFormatFlagsException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "org.antlr.runtime.RecognitionException": [
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "org.antlr.runtime.EarlyExitException": [
+        "org.antlr.runtime.EarlyExitException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "java.nio.file.NotDirectoryException": [
+        "java.nio.file.NotDirectoryException",
+        "java.nio.file.FileSystemException",
+        "java.io.IOException"
+    ],
+    "org.junit.runner.manipulation.NoTestsRemainException": [
+        "org.junit.runner.manipulation.NoTestsRemainException"
+    ],
+    "java.security.InvalidParameterException": [
+        "java.security.InvalidParameterException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "org.antlr.runtime.MismatchedTreeNodeException": [
+        "org.antlr.runtime.MismatchedTreeNodeException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "java.nio.channels.NonWritableChannelException": [
+        "java.nio.channels.NonWritableChannelException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.CloneNotSupportedException": [
+        "java.lang.CloneNotSupportedException"
+    ],
+    "java.io.FileNotFoundException": [
+        "java.io.FileNotFoundException",
+        "java.io.IOException"
+    ],
+    "java.lang.invoke.WrongMethodTypeException": [
+        "java.lang.invoke.WrongMethodTypeException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.spec.InvalidParameterSpecException": [
+        "java.security.spec.InvalidParameterSpecException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.io.StreamCorruptedException": [
+        "java.io.StreamCorruptedException",
+        "java.io.ObjectStreamException",
+        "java.io.IOException"
+    ],
+    "java.lang.StringIndexOutOfBoundsException": [
+        "java.lang.StringIndexOutOfBoundsException",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.RuntimeException"
+    ],
+    "java.net.ConnectException": [
+        "java.net.ConnectException",
+        "java.net.SocketException",
+        "java.io.IOException"
+    ],
+    "java.time.zone.ZoneRulesException": [
+        "java.time.zone.ZoneRulesException",
+        "java.time.DateTimeException",
+        "java.lang.RuntimeException"
+    ],
+    "java.io.CharConversionException": [
+        "java.io.CharConversionException",
+        "java.io.IOException"
+    ],
+    "java.lang.IllegalMonitorStateException": [
+        "java.lang.IllegalMonitorStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.cert.CertificateException": [
+        "java.security.cert.CertificateException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.util.TooManyListenersException": [
+        "java.util.TooManyListenersException"
+    ],
+    "java.beans.IntrospectionException": [
+        "java.beans.IntrospectionException"
+    ],
+    "java.lang.ArrayStoreException": [
+        "java.lang.ArrayStoreException",
+        "java.lang.RuntimeException"
+    ],
+    "org.antlr.runtime.MismatchedSetException": [
+        "org.antlr.runtime.MismatchedSetException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "org.antlr.runtime.MismatchedNotSetException": [
+        "org.antlr.runtime.MismatchedNotSetException",
+        "org.antlr.runtime.MismatchedSetException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "java.awt.dnd.InvalidDnDOperationException": [
+        "java.awt.dnd.InvalidDnDOperationException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.spec.InvalidKeySpecException": [
+        "java.security.spec.InvalidKeySpecException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.lang.InstantiationException": [
+        "java.lang.InstantiationException",
+        "java.lang.ReflectiveOperationException"
+    ],
+    "java.awt.geom.IllegalPathStateException": [
+        "java.awt.geom.IllegalPathStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.awt.datatransfer.MimeTypeParseException": [
+        "java.awt.datatransfer.MimeTypeParseException"
+    ],
+    "org.antlr.runtime.MismatchedTokenException": [
+        "org.antlr.runtime.MismatchedTokenException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "java.security.cert.CertificateParsingException": [
+        "java.security.cert.CertificateParsingException",
+        "java.security.cert.CertificateException",
+        "java.security.GeneralSecurityException"
+    ],
+    "net.fortuna.ical4j.model.CalendarException": [
+        "net.fortuna.ical4j.model.CalendarException",
+        "java.lang.RuntimeException"
+    ],
+    "java.net.PortUnreachableException": [
+        "java.net.PortUnreachableException",
+        "java.net.SocketException",
+        "java.io.IOException"
+    ],
+    "java.nio.file.AccessDeniedException": [
+        "java.nio.file.AccessDeniedException",
+        "java.nio.file.FileSystemException",
+        "java.io.IOException"
+    ],
+    "java.awt.HeadlessException": [
+        "java.awt.HeadlessException",
+        "java.lang.UnsupportedOperationException",
+        "java.lang.RuntimeException"
+    ],
+    "org.antlr.runtime.MismatchedRangeException": [
+        "org.antlr.runtime.MismatchedRangeException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "java.io.SyncFailedException": [
+        "java.io.SyncFailedException",
+        "java.io.IOException"
+    ],
+    "java.util.UnknownFormatFlagsException": [
+        "java.util.UnknownFormatFlagsException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "org.antlr.gunit.InvalidInputException": [
+        "org.antlr.gunit.InvalidInputException"
+    ],
+    "java.beans.PropertyVetoException": [
+        "java.beans.PropertyVetoException"
+    ],
+    "java.lang.reflect.MalformedParameterizedTypeException": [
+        "java.lang.reflect.MalformedParameterizedTypeException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.ArithmeticException": [
+        "java.lang.ArithmeticException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.ClassNotFoundException": [
+        "java.lang.ClassNotFoundException",
+        "java.lang.ReflectiveOperationException"
+    ],
+    "java.security.KeyException": [
+        "java.security.KeyException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.security.cert.CRLException": [
+        "java.security.cert.CRLException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.lang.reflect.UndeclaredThrowableException": [
+        "java.lang.reflect.UndeclaredThrowableException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.IllegalFormatConversionException": [
+        "java.util.IllegalFormatConversionException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.IllegalFormatPrecisionException": [
+        "java.util.IllegalFormatPrecisionException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.CancelledKeyException": [
+        "java.nio.channels.CancelledKeyException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.net.MalformedURLException": [
+        "java.net.MalformedURLException",
+        "java.io.IOException"
+    ],
+    "java.nio.file.NoSuchFileException": [
+        "java.nio.file.NoSuchFileException",
+        "java.nio.file.FileSystemException",
+        "java.io.IOException"
+    ],
+    "java.util.IllformedLocaleException": [
+        "java.util.IllformedLocaleException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.MissingFormatArgumentException": [
+        "java.util.MissingFormatArgumentException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.file.AtomicMoveNotSupportedException": [
+        "java.nio.file.AtomicMoveNotSupportedException",
+        "java.nio.file.FileSystemException",
+        "java.io.IOException"
+    ],
+    "java.util.ConcurrentModificationException": [
+        "java.util.ConcurrentModificationException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.file.DirectoryIteratorException": [
+        "java.nio.file.DirectoryIteratorException",
+        "java.util.ConcurrentModificationException",
+        "java.lang.RuntimeException"
+    ],
+    "java.io.UTFDataFormatException": [
+        "java.io.UTFDataFormatException",
+        "java.io.IOException"
+    ],
+    "java.lang.annotation.IncompleteAnnotationException": [
+        "java.lang.annotation.IncompleteAnnotationException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.MissingFormatWidthException": [
+        "java.util.MissingFormatWidthException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.io.InvalidClassException": [
+        "java.io.InvalidClassException",
+        "java.io.ObjectStreamException",
+        "java.io.IOException"
+    ],
+    "java.security.SignatureException": [
+        "java.security.SignatureException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.awt.datatransfer.UnsupportedFlavorException": [
+        "java.awt.datatransfer.UnsupportedFlavorException"
+    ],
+    "java.nio.file.NotLinkException": [
+        "java.nio.file.NotLinkException",
+        "java.nio.file.FileSystemException",
+        "java.io.IOException"
+    ],
+    "java.nio.InvalidMarkException": [
+        "java.nio.InvalidMarkException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "org.antlr.runtime.tree.RewriteEmptyStreamException": [
+        "org.antlr.runtime.tree.RewriteEmptyStreamException",
+        "org.antlr.runtime.tree.RewriteCardinalityException",
+        "java.lang.RuntimeException"
+    ],
+    "java.awt.image.ImagingOpException": [
+        "java.awt.image.ImagingOpException",
+        "java.lang.RuntimeException"
+    ],
+    "org.antlr.runtime.UnwantedTokenException": [
+        "org.antlr.runtime.UnwantedTokenException",
+        "org.antlr.runtime.MismatchedTokenException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "java.nio.BufferUnderflowException": [
+        "java.nio.BufferUnderflowException",
+        "java.lang.RuntimeException"
+    ],
+    "org.junit.runner.notification.StoppedByUserException": [
+        "org.junit.runner.notification.StoppedByUserException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.reflect.InvocationTargetException": [
+        "java.lang.reflect.InvocationTargetException",
+        "java.lang.ReflectiveOperationException"
+    ],
+    "java.lang.NullPointerException": [
+        "java.lang.NullPointerException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.concurrent.CancellationException": [
+        "java.util.concurrent.CancellationException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "net.fortuna.ical4j.model.ConstraintViolationException": [
+        "net.fortuna.ical4j.model.ConstraintViolationException"
+    ],
+    "java.security.cert.CertPathValidatorException": [
+        "java.security.cert.CertPathValidatorException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.io.InterruptedIOException": [
+        "java.io.InterruptedIOException",
+        "java.io.IOException"
+    ],
+    "java.security.cert.CertificateNotYetValidException": [
+        "java.security.cert.CertificateNotYetValidException",
+        "java.security.cert.CertificateException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.nio.channels.NotYetConnectedException": [
+        "java.nio.channels.NotYetConnectedException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "org.antlr.runtime.FailedPredicateException": [
+        "org.antlr.runtime.FailedPredicateException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "java.nio.file.InvalidPathException": [
+        "java.nio.file.InvalidPathException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.FormatFlagsConversionMismatchException": [
+        "java.util.FormatFlagsConversionMismatchException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.regex.PatternSyntaxException": [
+        "java.util.regex.PatternSyntaxException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.prefs.BackingStoreException": [
+        "java.util.prefs.BackingStoreException"
+    ],
+    "java.awt.FontFormatException": [
+        "java.awt.FontFormatException"
+    ],
+    "java.nio.channels.ShutdownChannelGroupException": [
+        "java.nio.channels.ShutdownChannelGroupException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.file.FileSystemNotFoundException": [
+        "java.nio.file.FileSystemNotFoundException",
+        "java.lang.RuntimeException"
+    ],
+    "net.fortuna.ical4j.model.ValidationException": [
+        "net.fortuna.ical4j.model.ValidationException"
+    ],
+    "java.net.UnknownServiceException": [
+        "java.net.UnknownServiceException",
+        "java.io.IOException"
+    ],
+    "java.net.HttpRetryException": [
+        "java.net.HttpRetryException",
+        "java.io.IOException"
+    ],
+    "java.util.concurrent.ExecutionException": [
+        "java.util.concurrent.ExecutionException"
+    ],
+    "java.lang.IllegalThreadStateException": [
+        "java.lang.IllegalThreadStateException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.InvalidPropertiesFormatException": [
+        "java.util.InvalidPropertiesFormatException",
+        "java.io.IOException"
+    ],
+    "java.util.IllegalFormatWidthException": [
+        "java.util.IllegalFormatWidthException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.awt.color.ProfileDataException": [
+        "java.awt.color.ProfileDataException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.file.attribute.UserPrincipalNotFoundException": [
+        "java.nio.file.attribute.UserPrincipalNotFoundException",
+        "java.io.IOException"
+    ],
+    "java.lang.NumberFormatException": [
+        "java.lang.NumberFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "net.fortuna.ical4j.data.ParserException": [
+        "net.fortuna.ical4j.data.ParserException"
+    ],
+    "java.net.URISyntaxException": [
+        "java.net.URISyntaxException"
+    ],
+    "org.antlr.runtime.MissingTokenException": [
+        "org.antlr.runtime.MissingTokenException",
+        "org.antlr.runtime.MismatchedTokenException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "java.util.EmptyStackException": [
+        "java.util.EmptyStackException",
+        "java.lang.RuntimeException"
+    ],
+    "java.time.temporal.UnsupportedTemporalTypeException": [
+        "java.time.temporal.UnsupportedTemporalTypeException",
+        "java.time.DateTimeException",
+        "java.lang.RuntimeException"
+    ],
+    "java.awt.color.CMMException": [
+        "java.awt.color.CMMException",
+        "java.lang.RuntimeException"
+    ],
+    "java.nio.channels.IllegalSelectorException": [
+        "java.nio.channels.IllegalSelectorException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.awt.AWTException": [
+        "java.awt.AWTException"
+    ],
+    "java.security.InvalidKeyException": [
+        "java.security.InvalidKeyException",
+        "java.security.KeyException",
+        "java.security.GeneralSecurityException"
+    ],
+    "org.antlr.runtime.NoViableAltException": [
+        "org.antlr.runtime.NoViableAltException",
+        "org.antlr.runtime.RecognitionException"
+    ],
+    "java.nio.file.DirectoryNotEmptyException": [
+        "java.nio.file.DirectoryNotEmptyException",
+        "java.nio.file.FileSystemException",
+        "java.io.IOException"
+    ],
+    "java.lang.TypeNotPresentException": [
+        "java.lang.TypeNotPresentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.util.IllegalFormatCodePointException": [
+        "java.util.IllegalFormatCodePointException",
+        "java.util.IllegalFormatException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.UnrecoverableKeyException": [
+        "java.security.UnrecoverableKeyException",
+        "java.security.UnrecoverableEntryException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.security.cert.CertificateEncodingException": [
+        "java.security.cert.CertificateEncodingException",
+        "java.security.cert.CertificateException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.nio.file.ProviderNotFoundException": [
+        "java.nio.file.ProviderNotFoundException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.reflect.MalformedParametersException": [
+        "java.lang.reflect.MalformedParametersException",
+        "java.lang.RuntimeException"
+    ],
+    "java.lang.NoSuchFieldException": [
+        "java.lang.NoSuchFieldException",
+        "java.lang.ReflectiveOperationException"
+    ],
+    "java.nio.file.FileAlreadyExistsException": [
+        "java.nio.file.FileAlreadyExistsException",
+        "java.nio.file.FileSystemException",
+        "java.io.IOException"
+    ],
+    "java.security.InvalidAlgorithmParameterException": [
+        "java.security.InvalidAlgorithmParameterException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.nio.channels.FileLockInterruptionException": [
+        "java.nio.channels.FileLockInterruptionException",
+        "java.io.IOException"
+    ],
+    "java.lang.EnumConstantNotPresentException": [
+        "java.lang.EnumConstantNotPresentException",
+        "java.lang.RuntimeException"
+    ],
+    "java.io.InvalidObjectException": [
+        "java.io.InvalidObjectException",
+        "java.io.ObjectStreamException",
+        "java.io.IOException"
+    ],
+    "java.util.concurrent.RejectedExecutionException": [
+        "java.util.concurrent.RejectedExecutionException",
+        "java.lang.RuntimeException"
+    ],
+    "java.security.cert.CertificateExpiredException": [
+        "java.security.cert.CertificateExpiredException",
+        "java.security.cert.CertificateException",
+        "java.security.GeneralSecurityException"
+    ],
+    "java.nio.channels.AlreadyBoundException": [
+        "java.nio.channels.AlreadyBoundException",
+        "java.lang.IllegalStateException",
+        "java.lang.RuntimeException"
+    ],
+    "java.net.SocketTimeoutException": [
+        "java.net.SocketTimeoutException",
+        "java.io.InterruptedIOException",
+        "java.io.IOException"
+    ],
+    "java.nio.charset.IllegalCharsetNameException": [
+        "java.nio.charset.IllegalCharsetNameException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.RuntimeException"
+    ]
+}

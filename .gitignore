@@ -1,0 +1,8 @@
+.idea/
+env/
+data/apitestgen/evaluation/subjects/*/*/*.jimple
+data/apitestgen/evaluation/subjects/*/*/soot_log.txt
+data/apitestgen/evaluation/subjects/*/extracted/
+data/apitestgen/evaluation/tools/synthesizer/
+data/apitestgen/evaluation/tools/evosuite/
+codeql/

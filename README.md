@@ -1,13 +1,44 @@
-# Catcher
+# Improvements to Catcher
 
-Tool that combines static exception propagation and search-based software testing to automatically detect (and generate test cases) for API misuses in Java client programs.
+We have made necessary changes to create a new version of Catcher that would
+
+These changes are:
+1. Upgrade Catcher from Python 2.7 to Python3.
+2. Make Catcher extendable for other subjects.
+3. Create a format for running Catcher on subjects.
+
+## Requirements
+1. Make sure to have Python 3 installed.
+  - Check by running `python3 --version`
+2. Have the Maven command line (mvn) installed. 
+  - Check by running `mvn --version`
 
 # Structure
 
 The structure of the experiment folder is the following:
 
-- `subjects/` contains the subjects for the experiments. Each subject folder contains the `.jar` files of the projects.
+- `subjects/` contains the subjects for the experiments. Each subject folder contains the source files of the projects.
 - `tools/` contains the tools required to run the experiment.
+
+## Instructions
+1. Create a virtual environment by running `python3 -m venv <path-to-virtual-environment>` 
+2. Install necessary Python dependencies by `pip3 install -r requirements.txt`
+3. Create a folder with the name of your subject into the folder `data/apitestgen/evaluation/subjects/` and copy your subject code into it, making sure it contains src/, and build file names `pom.xml`
+  - The name to the folder created will be used when running the analysis
+4. Go to the directory by running `cd data/apitestgen`
+5. Run Catcher using `bash evaluation/thrower-one-project.sh <SUBJECT-NAME>`
+  - where:
+    - SUBJECT-NAME is the name of the folder created inside `subjects`
+
+
+Tool that combines static exception propagation and search-based software testing to automatically detect (and generate test cases) for API misuses in Java client programs.
+
+# Evaluation Replication Instructions
+
+We chose to evaluate Catcher using an empirical approach. This consisted of cross-checking reported misuses with the source code of the selected projects. To replicate our results, we have included the following files for your viewing:
+
+1.	The files that contain the identified misuses for the subjects of our study are provided in data/apitestgen/evaluation/experiment. The erec.json file for each subject contains the misuses reported by Catcher. 
+2.	We have also included the source code for each subject in the following google drive link: https://drive.google.com/drive/folders/1LDNm7gAlGfixrH02n0sUXLczfA0BRzLE?usp=sharing
 
 # Execution
 
@@ -15,43 +46,12 @@ The structure of the experiment folder is the following:
 
 The subjects are listed in `config.sh`. Comment a line to remove one particular subject from the evaluation. Each subject must have a corresponding folder in `subjects/` containing the `.jar` file used for the analysis.
 
-## eRec analysis (`tools/erec/erec.sh`)
 
-The eRec analyze is launched using `tools/erec/erec.sh`. The script receives as parameters the name of the subject. The folder with the `.jar` files for that subject and the experiment folder where to produce the `experiment/<subject-name>/erec.json` file used by the synthesizer.
-
-- Inputs:
-  - Subject name (e.g., `jfreechart-1.2.0`)
-  - Folder with the `.jar` files (e.g., `subject/jfreechart-1.2.0`)
-  - Experiment location where to produce intermediate files and `erec.json` file (e.g., `experiment/jfreechart-1.2.0`)
-- Outputs:
-  - `erec.json` file in the experiment location (e.g., `experiment/jfreechart-1.2.0/erec.json`)
-
-## Stack traces synthesis (`tools/synthesizer/synthesize.sh`)
-
-The stack traces synthesizer is launched using `synthesizer/synthesize.sh`. The script receives as parameters the name of the subject and the experiment folder where to find the `erec.json` file produced by eRec and produce the stack traces in `experiment/<subject-name>/stacktraces`.
-
-- Inputs:
-  - Subject name (e.g., `jfreechart-1.2.0`)
-  - Experiment location where to find the `erec.json` file (e.g., `experiment/jfreechart-1.2.0`)
-- Outputs:
-  - Stack traces (`.log` files) in `experiment/<subject-name>/stacktraces` (e.g., `experiment/jfreechart-1.2.0/stacktraces`)
-  - `<subject-name>.json` file in `experiment/<subject-name>/stacktraces` (e.g., `experiment/jfreechart-1.2.0/stacktraces/jfreechart-1.2.0.json`)
-
-## EvoSuite analysis (`tools/evosuite/launcher-1.0.sh`)
-
-See the guidelines document (catcher-artifact.pdf) for the setting of the parameters and how to launch the tool.
-
-# Synthesizing stack traces for a new project
-
-1. In `config.sh`, comment/uncomment the lines of the projects for which you want to synthesize stack traces. Add a line for each new project (the name should be the name used in `experiment/`).
-
-2. Execute `. runsynthesizer.sh`.
-
-# Tutorial on VM
+# Tutorial on VM for Catcher's original version
 
 See catcher-artifact.pdf
 
-# Run on VM
+# Run on VM from Catcher original version
 
 https://drive.google.com/file/d/1UuyJTOac9kmzIUNFvFwITFwRConfUPG3/view?usp=sharing
 
@@ -59,7 +59,7 @@ https://drive.google.com/file/d/1UuyJTOac9kmzIUNFvFwITFwRConfUPG3/view?usp=shari
 
 https://drive.google.com/open?id=1luIkAC6q9HPhlbdvy_Y8JTKgPnp4cUVi
 
-# Main findings
+# Main findings from Catcher original version
 
 https://drive.google.com/file/d/1GbiggiqCq0sha7OmiZmD3NuJuguPITFZ/view?usp=sharing
 
